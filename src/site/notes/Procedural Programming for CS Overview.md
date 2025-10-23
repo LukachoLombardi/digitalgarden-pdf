@@ -4,7 +4,7 @@
 
 #informatics #orga
 # Handout
-![[ppi-handout_00.pdf]]
+<iframe src="/img/user/Attachments/ppi-handout_00.pdf" width="100%" height="600px" title="ppi-handout_00.pdf" style="border:1px solid #ccc;"></iframe>
 
 # Dates and Stuff
 ## Lectures
