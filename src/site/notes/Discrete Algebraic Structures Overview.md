@@ -3,7 +3,7 @@
 ---
 
 #math #orga
-![[InformationSheet.pdf]]
+![InformationSheet.pdf](/img/user/Attachments/InformationSheet.pdf)
 
 # Summary
 ## Dates
@@ -52,4 +52,4 @@ Basic values in handout
 
 -  **Consultation hours with Prof are also available on StudIP page!**
 ## Basic Timeline/Graph
-![[DAS Course timeline.pdf]]
+![DAS Course timeline.pdf](/img/user/Attachments/DAS%20Course%20timeline.pdf)
