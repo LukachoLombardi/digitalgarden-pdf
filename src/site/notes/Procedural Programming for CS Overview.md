@@ -4,7 +4,7 @@
 
 #informatics #orga
 # Handout
-![ppi-handout_00.pdf](/img/user/Attachments/ppi-handout_00.pdf)
+![[ppi-handout_00.pdf]]
 
 # Dates and Stuff
 ## Lectures
