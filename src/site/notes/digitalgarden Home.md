@@ -7,4 +7,4 @@
 - All slides from the prep course: [[Slide Dump Math Prep\|Slide Dump Math Prep]]
 
 > [!WARNING] Some attachments may not display correctly
-> Especially PDFs won't show up here, since they're not supported by digitalgarden
+> Especially PDFs may or may not be visible. Experimental PDF support is enabled, but still hit or miss.
