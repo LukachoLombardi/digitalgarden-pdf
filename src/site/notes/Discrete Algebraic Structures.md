@@ -11,7 +11,18 @@
 <iframe src="/img/user/Xournal++/DAS%20Practice%20Sheet%201.pdf" width="100%" height="600px" title="DAS Practice Sheet 1" style="border:1px solid #ccc;"></iframe>
 ## Test 1 Practice
 How many elements are there in
-
+$$
+T = (\{1,2,3\} \times\{1,2\} \backslash \{(i,j) \in \{1,2,3\} \times \{1,2\}|i < j\})
+\newline
+\{1,2,3\} \times\{1,2\}=\{1,\{1,1\},\{1,2\},2,\{2,1\},\{2,2\},3,\{3,1\},\{3,2\}\}
+=\{1,\{1,1\},2,\{2,1\},\{2,2\},3,\{3,1\},\{3,2\}\}
+\newline
+\{(i,j) \in \{1,2,3\} \times \{1,2\}\times \{1,2\}|i < j\} = \{2,1\},\{3,1\},\{3,2\}
+\newline
+T = \{1,\{1,1\},2,\{2,2\},3\}
+\newline
+|T| = 5
+$$
 
 <iframe src="/img/user/Xournal++/2310252229.pdf" width="100%" height="600px" title="2310252229" style="border:1px solid #ccc;"></iframe>
 # Lecture Notes
