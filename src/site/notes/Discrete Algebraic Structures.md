@@ -11,9 +11,7 @@
 <iframe src="/img/user/Xournal++/DAS%20Practice%20Sheet%201.pdf" width="100%" height="600px" title="DAS Practice Sheet 1" style="border:1px solid #ccc;"></iframe>
 ## Test 1 Practice
 How many elements are there in
-$$
-T = (\{1,2,3\} \times\{1,2\} \backslash \{(i,j) \in \{1,2,3\} \times \{1,2\}|i < j\})
-$$
+$T = (\{1,2,3\} \times\{1,2\} \backslash \{(i,j) \in \{1,2,3\} \times \{1,2\}|i < j\})$
 $$
 \{1,2,3\} \times\{1,2\}=\{1,\{1,1\},\{1,2\},2,\{2,1\},\{2,2\},3,\{3,1\},\{3,2\}\}
 $$
@@ -77,7 +75,6 @@ Sets can also contain other sets (like S = {0, 1, {0, 1}, 2}) -> S has 4 element
 
 Basically a foreach loop
 ### Notation
-
 {${x \in S | P(X)}$}
 Where P is a "filter function" (proper term: **selection criterion**)
 ### Common Selectors
@@ -90,6 +87,12 @@ Where P is a "filter function" (proper term: **selection criterion**)
 - Pair: tuple of length 2 (no shit)
 - Triple/Triplet: Use your brain
 - ... n-tuple: tuple of length n
+
+
+> [!WARNING] Tuple Order
+> A tuple's identity is defined by it's order! $(x,y) \neq (y,x)$!
+
+
 - We can also write S² for results of S x S
 - S³ for triples
 - $S^n$ for n- tuples
