@@ -24,7 +24,7 @@
 
 
 ## Sets
-See [[DAS Sets Notes\|this]]
+See [[DAS Sets Notes\|DAS Sets Notes]]
 
 ## Functions
 See [[DAS Functions Notes\|DAS Functions Notes]]
