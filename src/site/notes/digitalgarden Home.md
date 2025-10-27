@@ -9,6 +9,6 @@
 > [!WARNING] Some attachments may not display correctly
 > Especially PDFs may or may not be visible. Experimental PDF support is enabled, but still hit or miss.
 > 
-> Click [[https://github.com/LukachoLombardi/digitalgarden-pdf/tree/1ef1fc8d1d6873bbae34501f1e5d8b9438bb90fd/src/site/img/user\|here]] for manual access to the attached PDF files
+> Click [here](https://github.com/LukachoLombardi/digitalgarden-pdf/tree/1ef1fc8d1d6873bbae34501f1e5d8b9438bb90fd/src/site/img/user) for manual access to the attached PDF files
 
 
