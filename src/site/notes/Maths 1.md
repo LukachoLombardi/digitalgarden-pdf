@@ -14,6 +14,7 @@
 <iframe src="/img/user/Xournal++/23101159.pdf" width="100%" height="600px" title="[23101159" style="border:1px solid #ccc;"></iframe>
 
 ![[Xournal++/2410250804.pdf\|2410250804]]
+
 # Linear Algebra
 [[Linear Algebra Maths 1\|Linear Algebra Maths 1]]
 # Analysis
