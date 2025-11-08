@@ -17,9 +17,8 @@ A function $f:A \rightarrow B$ is a set $f\subseteq A\times B$, such that for **
 ![Pasted image 20251027160822.png](/img/user/Attachments/Pasted%20image%2020251027160822.png)
 
 > [!NOTE] 
-> image $f[A']$ can be read as "all members of A' that point to a member of B"
-> Preimage $f⁻¹[B']$ can be read as "all members of A that are pointed at by a member of B'"
-> (So basically all possible input and output values of f)
+> image $f[A']$ can be read as "all members of B that are pointed at by a member of A'"
+> Preimage $f⁻¹[B']$ can be read as "all members of A that point to a member of B'"
 
 ## Composing functions
 Basically putting a function inside another function

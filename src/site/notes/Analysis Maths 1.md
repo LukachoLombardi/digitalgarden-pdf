@@ -18,7 +18,7 @@ Some more stuff about Proofs
 f: X \rightarrow Y
 $$
 
-Notation of all (co-)domain values' mapping: $$x \mapsto f(x)$$
+Notation of all (co-)domain values' mapping:  $$x \mapsto f(x)$$
 ## "-jectivity" types
 
 - general function: codomain values can have many domain values ($f(x_1)=f(x_2) \rightarrow x_1=x_2$, )
