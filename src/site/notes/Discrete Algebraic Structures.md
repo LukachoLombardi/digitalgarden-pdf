@@ -13,8 +13,9 @@
 <iframe src="/img/user/Xournal++/DAS%20Practice%201.pdf" width="100%" height="600px" title="DAS Practice Sheet 1" style="border:1px solid #ccc;"></iframe>
 <iframe src="/img/user/Xournal++/2310252229.pdf" width="100%" height="600px" title="2310252229" style="border:1px solid #ccc;"></iframe>
 
-## HÜ 5.11
-<iframe src="/img/user/Xournal++/DAS%20H%C3%9C%20051125.pdf" width="100%" height="600px" title="DAS HÜ 051125" style="border:1px solid #ccc;"></iframe>
+## Practice Sheet 3
+
+<iframe src="/img/user/Xournal++/DAS%20Practice%203.pdf" width="100%" height="600px" title="DAS Practice 3.pdf" style="border:1px solid #ccc;"></iframe>
 # Lecture Notes
 ## Handout
 <iframe src="/img/user/Attachments/main.pdf" width="100%" height="600px" title="main.pdf" style="border:1px solid #ccc;"></iframe>
@@ -24,9 +25,14 @@
 
 <iframe src="/img/user/Attachments/Lecture_2.pdf" width="100%" height="600px" title="Lecture_2.pdf" style="border:1px solid #ccc;"></iframe>
 
+<iframe src="/img/user/Attachments/Lecture_3.pdf" width="100%" height="600px" title="Lecture_3.pdf" style="border:1px solid #ccc;"></iframe>
 
+<iframe src="/img/user/Attachments/Lecture_4.pdf" width="100%" height="600px" title="Lecture_4.pdf" style="border:1px solid #ccc;"></iframe>
 ## Sets
 See [[DAS Sets Notes\|DAS Sets Notes]]
 
 ## Functions
 See [[DAS Functions Notes\|DAS Functions Notes]]
+
+# Graphs and Relations
+See [[DAS Graphs and Relations\|DAS Graphs and Relations]]
