@@ -34,5 +34,8 @@ See [[DAS Sets Notes\|DAS Sets Notes]]
 ## Functions
 See [[DAS Functions Notes\|DAS Functions Notes]]
 
+# Basic Logic
+See [[DAS Basic Logic Notes\|DAS Basic Logic Notes]]
+
 # Graphs and Relations
 See [[DAS Graphs and Relations\|DAS Graphs and Relations]]

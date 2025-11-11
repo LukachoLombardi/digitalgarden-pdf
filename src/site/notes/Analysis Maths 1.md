@@ -43,6 +43,21 @@ A sequence is a function $x: \mathbb{N} \rightarrow \mathbb{R}$. Application of 
 
 ## Convergence
 This is basically just $\lim\limits_{x\to\infty} (x_n)_n$.
-See [[Ana1_EN-1.pdf#page=8|Ana1_EN-1, p.4]] for more info.
+![[Ana1_EN-1.pdf#page=8&rect=69,77,534,258|Ana1_EN-1, p.4]]
+(This defines it a bit more specifically, e.g. for discrete functions)
+
+> [!INFO] Proposition of uniqueness
+> A limit $x$ is proposed to be unique. There's a proof somewhere in the handout, but it should be pretty obvious.
+
+### Notational Fluff
+We can also write $x \stackrel{\varepsilon}{\approx} y$ instead of $|x-y| < \varepsilon$
+
+### Triangle Inequality
+Don't know what relevance this holds here, but $x \stackrel{\varepsilon}{\approx} y \stackrel{\delta}{\approx} z \Rightarrow x \stackrel{\varepsilon+\delta}{\approx} z$. We can deduce from this, that $|x − z| ≤ |x − y| + |y − z|$. If we take $a = |x-y|$, $b=|y-z|$ as sides of a triangle between $x,y/y,z$, this shows that the distance $y$ to $z$ is smaller than the distances $a,b$ added.
+
+## Bounds
+![[Ana1_EN-1.pdf#page=11&rect=69,299,534,477|Ana1_EN-1, p.7]]
+(summarize this chapter a bit here)
+
 TODO: Look at 2.3 and 2.4 again
 
