@@ -54,3 +54,9 @@ From: [[Foundations_Ana_LinAlg_EN.pdf#page=11|Foundations_Ana_LinAlg_EN, p.7]]
 > [!NOTE] Sums and products
 > Commutative, Associative and Distributive laws apply to sums and products
 
+# Vector Recap
+TODO: Write down the stuff from [[Math_1_LinAlg_VL03_print_EN.pdf]] that you feel worth remembering
+
+# Systems of linear Equasions
+[[Math_1_LinAlg_VL04_print_EN.pdf]]
+Write down a lot of stuff here
