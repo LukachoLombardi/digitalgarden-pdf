@@ -17,6 +17,7 @@
 # Linear Algebra
 [[Linear Algebra Maths 1\|Linear Algebra Maths 1]]
 ## Slides And Handouts
+
 <iframe src="/img/user/Attachments/Foundations_Ana_LinAlg_EN.pdf" width="100%" height="600px" title="Foundations_Ana_LinAlg_EN.pdf" style="border:1px solid #ccc;"></iframe>
 <iframe src="/img/user/Attachments/Math_1_LinAlg_VL03_print_EN.pdf" width="100%" height="600px" title="Math_1_LinAlg_VL03_print_EN.pdf" style="border:1px solid #ccc;"></iframe>
 
@@ -24,4 +25,5 @@
 # Analysis
 [[Analysis Maths 1\|Analysis Maths 1]]
 ## Slides and Handouts
+
 <iframe src="/img/user/Attachments/Ana1_EN-1.pdf" width="100%" height="600px" title="Ana1_EN-1.pdf" style="border:1px solid #ccc;"></iframe>
