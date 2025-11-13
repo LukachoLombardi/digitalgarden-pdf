@@ -3,4 +3,4 @@
 ---
 
 This is discussed in [[Lecture_3.pdf]]
-Build your notes from that
+TODO: Build your notes from that

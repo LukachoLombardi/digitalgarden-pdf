@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/analysis-maths-1/"}
 ---
 
-Some more stuff about Proofs
+# Some more stuff about Proofs
 ## Implications
 ![Pasted image 20251023114430.png](/img/user/Attachments/Pasted%20image%2020251023114430.png)
 ## Contrapositions
@@ -59,5 +59,30 @@ Don't know what relevance this holds here, but $x \stackrel{\varepsilon}{\approx
 ![[Ana1_EN-1.pdf#page=11&rect=69,299,534,477|Ana1_EN-1, p.7]]
 (summarize this chapter a bit here)
 
-TODO: Look at 2.3 and 2.4 again
+As per later in the slide, symmetric bounds around 0 can also be chosen as 
+$$x_n \in [c,c],: c = max(|a|,|b|)$$
+### Bounds and Convergence
+![[Ana1_EN-1.pdf#page=12&rect=66,470,536,695|Ana1_EN-1, p.8]]
+The proof probably isn't relevant for the exam, but you should try to at least follow it. 
+
+## Null Sequences
+Defined as a sequence $(x_n)_n: n \rightarrow \infty \Rightarrow x_n\rightarrow0$
+
+![[Ana1_EN-1.pdf#page=13&rect=69,454,536,599|Ana1_EN-1, p.9]]
+
+![[Ana1_EN-1.pdf#page=13&rect=67,259,538,316|Ana1_EN-1, p.9]]
+Note for the proof of this lemma: if we add two functions at the same n, the limit for the result will be the addition of the original limits (separately for both bound directions).
+
+Starting from [[Ana1_EN-1.pdf#page=13|this]] we have even more null sequence lemmas. These are probably good to know about.
+
+## Commutation of lim
+sequences commute with basic ops $+,-,\times, \div$.  (If using a shared counter n).
+$$
+(x_n)_n \, op \, (y_n)_n = (x_n \, op \, y_n)_n  
+$$
+TODO: Look at this stuff later
+## Cauchy Sequences
+
+
+
 
