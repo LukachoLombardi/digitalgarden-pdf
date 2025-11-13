@@ -131,6 +131,7 @@ You can try memorizing this:
 ![[Math_1_LinAlg_VL04_print_EN.pdf#page=14&rect=111,38,527,799|Math_1_LinAlg_VL04_print_EN, p.14]]
 
 But I honest to god have no fucking idea how you're supposed to apply this to arbitrary LMS. I'm not even sure LeBorne even made an attempt to explain it.
+I guess you could argue something about linear dependence here? A single row of the matrix might produce the same output for two different vector mults, but as long as the other rows aren't literally identical to it, they will produce a value different from the one contained in the "original" output. So as long as that second condition is satisfied, LMS' are bijective. Or I could be completely wrong about this idk
 
 # Linearity
 TODO
