@@ -110,7 +110,7 @@ Multiplying a vector x with a matrix A creates a vector b. We just multiply each
 # Matrices as LES mappings
 We can use vectors as in/out values for functions. We take this a step further, by not only scaling, adding or coupling them with other vectors, but transforming them by applying a matrix. Look at the graphic:
 ![[Math_1_LinAlg_VL04_print_EN.pdf#page=12&rect=68,13,522,824|Math_1_LinAlg_VL04_print_EN, p.12]]
-This is a subcategory of LES', specifically it is a **System of linear mappings** (LMS)
+This is a kind of LES', specifically it may be called a **System of linear mappings** (LMS)
 
 ## Special types of LMS
 1. Zero matrix: $0 \in \mathbb{R}^{m \times n}$ (all elements are zero)
@@ -135,3 +135,6 @@ I guess you could argue something about linear dependence here? A single row of 
 
 # Linearity
 TODO
+
+# Solving LES
+Mostly repeating stuff from HS, TODO: Write down some theorems and stuff

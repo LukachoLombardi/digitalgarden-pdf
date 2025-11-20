@@ -28,6 +28,9 @@
 <iframe src="/img/user/Attachments/Lecture_3.pdf" width="100%" height="600px" title="Lecture_3.pdf" style="border:1px solid #ccc;"></iframe>
 
 <iframe src="/img/user/Attachments/Lecture_4.pdf" width="100%" height="600px" title="Lecture_4.pdf" style="border:1px solid #ccc;"></iframe>
+
+<iframe src="/img/user/Attachments/main-3.pdf" width="100%" height="600px" title="main-3.pdf" style="border:1px solid #ccc;"></iframe>
+
 ## Sets
 See [[DAS Sets Notes\|DAS Sets Notes]]
 

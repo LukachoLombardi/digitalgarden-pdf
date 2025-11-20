@@ -82,7 +82,39 @@ $$
 $$
 TODO: Look at this stuff later
 ## Cauchy Sequences
+TODO
 
+## Monotonicity and Convergence
+![[Ana1_EN-1.pdf#page=21&rect=68,350,534,528|Ana1_EN-1, p.17]]
+Pretty basic stuff
+![[Ana1_EN-1.pdf#page=21&rect=69,210,534,299|Ana1_EN-1, p.17]]
+TODO: Understand proofs
 
+## Extrema
+![[Ana1_EN-1.pdf#page=23&rect=66,426,533,621|Ana1_EN-1, p.19]]
+minimum and maximum are infimum and suprenums which are actually reached by $x_n$ at some point.
 
+## Subsequences
+Subsequences are basically sub-parts of another sequence (meaning either the same sequence, or a reduced mapping).
+It is written as 
+$$
+(x_{n_k})k\in\mathbb{N}
+$$
+With k being the input to a sequence returning the used n's. Note that $(n_k)k\in\mathbb{N}$ is still an infinite sequence.
 
+> [!INFO] Convergence
+> Convergence is preserved between sequences and their subsequences. Since we can't add outliers, we cannot break the convergence. 
+> [[Ana1_EN-1.pdf#page=24|Ana1_EN-1, p.20]]
+
+![[Ana1_EN-1.pdf#page=25&rect=68,590,533,653|Ana1_EN-1, p.21]]
+![[Ana1_EN-1.pdf#page=25&rect=68,245,535,410|Ana1_EN-1, p.21]]
+
+# Series
+![[Ana1_EN-1.pdf#page=28&rect=68,450,534,655|Ana1_EN-1, p.24]]
+
+Series are basically running totals of an underlying sequence's $(x_n)_n$'s $x_n$'s up to a given $n = m$. 
+## Convergence of Series
+![[Ana1_EN-1.pdf#page=30&rect=70,635,534,692|Ana1_EN-1, p.26]]
+Can be proven by utilizing dependence on the Sequence's relating Series.
+
+![[Ana1_EN-1.pdf#page=31&rect=70,330,533,431|Ana1_EN-1, p.27]]

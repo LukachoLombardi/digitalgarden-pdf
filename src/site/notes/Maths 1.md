@@ -24,6 +24,7 @@
 
 <iframe src="/img/user/Attachments/Math_1_LinAlg_VL04_print_EN.pdf" width="100%" height="600px" title="Math_1_LinAlg_VL04_print_EN.pdf" style="border:1px solid #ccc;"></iframe>
 
+<iframe src="/img/user/Attachments/Math_1_LinAlg_VL05_print_EN.pdf" width="100%" height="600px" title="Math_1_LinAlg_VL05_print_EN.pdf" style="border:1px solid #ccc;"></iframe>
 # Analysis
 [[Analysis Maths 1\|Analysis Maths 1]]
 ## Slides and Handouts
