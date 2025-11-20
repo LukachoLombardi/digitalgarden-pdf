@@ -26,6 +26,16 @@ The Reason why R is a subset of the Cartesian product, is that it doesn't *have*
 
 ![[Lecture_4.pdf#page=55&rect=-16,416,973,647|Lecture_4, p.14-1]]
 
-TODO: Add notes about inverses
-
 # Closure Operations
+> [!SUMMARY] 
+> Closures are the smallest possible supersets-graphs of graphs, that satisfy specific properties.
+
+Take 
+$$
+S = \{(1,2),(1,3)\}
+$$
+The symmetric closure for $S$ would be 
+$$
+S' = {(1,2), (2,1), (1,3), (3,1)}
+$$
+Note that the closure isn't the *modification* that needs be applied, but the *result* of said modification.
