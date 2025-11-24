@@ -57,10 +57,17 @@ Don't know what relevance this holds here, but $x \stackrel{\varepsilon}{\approx
 
 ## Bounds
 ![[Ana1_EN-1.pdf#page=11&rect=69,299,534,477|Ana1_EN-1, p.7]]
-(summarize this chapter a bit here)
 
 As per later in the slide, symmetric bounds around 0 can also be chosen as 
 $$x_n \in [c,c],: c = max(|a|,|b|)$$
+Actually determinining bounds is mostly done by analyzing convergence. Lower bounds can often be found by finding monotonical increase and taking $x_1$'s value.
+
+## $\lim$ notation
+You should remember this from HS. Basically:
+$$
+x_n \rightarrow x:n \rightarrow \infty \Leftrightarrow \lim_{n \to \infty} x_n = x
+$$
+
 ### Bounds and Convergence
 ![[Ana1_EN-1.pdf#page=12&rect=66,470,536,695|Ana1_EN-1, p.8]]
 The proof probably isn't relevant for the exam, but you should try to at least follow it. 
@@ -73,23 +80,51 @@ Defined as a sequence $(x_n)_n: n \rightarrow \infty \Rightarrow x_n\rightarrow0
 ![[Ana1_EN-1.pdf#page=13&rect=67,259,538,316|Ana1_EN-1, p.9]]
 Note for the proof of this lemma: if we add two functions at the same n, the limit for the result will be the addition of the original limits (separately for both bound directions).
 
-Starting from [[Ana1_EN-1.pdf#page=13|this]] we have even more null sequence lemmas. These are probably good to know about.
+> [!INFO] Lemmas
+> Starting from [[Ana1_EN-1.pdf#page=13|this]] we have even more null sequence lemmas. These are probably good to know about.
 
+The most important Lemma is probably the fact, that each convergent sequence can be written as a null sequence plus the limit.
 ## Commutation of lim
 sequences commute with basic ops $+,-,\times, \div$.  (If using a shared counter n).
 $$
 (x_n)_n \, op \, (y_n)_n = (x_n \, op \, y_n)_n  
 $$
-TODO: Look at this stuff later
+![[Ana1_EN-1.pdf#page=15&rect=67,345,532,641|Ana1_EN-1, p.11]]
+
+The proof around this is pretty long, you probably won't remember it, but at least try understanding it.
+
+## $\leq$ extends to the limit
+$$
+(x_n)_n \leq (y_n)_n \Leftrightarrow \lim_{n \to \infty} x_n \leq \lim_{n \ \to \infty} y_n
+\,
+\text{; for every} \, n \in \mathbb{N}
+$$
+The proof is weird, but this honestly just makes sense.
+
+## Sandwich Lemma
+If a sequence is "sandwiched" between two sequences convergent to the same $x$ for every $n \in \mathbb{N}$, then the sandwiched sequence has the same limit.
+
+## Convergence beating order
+- higher powers beat lower powers
+- exponential quotients beat power quotients
+- factorials beat exponential quotients
 ## Cauchy Sequences
-TODO
+![[Ana1_EN-1.pdf#page=20&rect=68,363,536,473|Ana1_EN-1, p.16]]
+Basically a function that "converges onto itself", but not necessarily to a single value:
+![Pasted image 20251124142156.png](/img/user/Attachments/Pasted%20image%2020251124142156.png)
+
+> [!WARNING] Nomenclature
+> We probably can't call Cauchy sequences "convergent" by themselves, since that descriptor is already taken. You could remember it as "it's neighboring $x_n$ values get infinitely close for $n > n_0$ (for some $n_0$)"
+
+> [!INFO] Regular Convergence vs Cauchy sequences
+> Every convergent sequence is also a Cauchy sequence, but not necessarily the other way around! 
+> Every Cauchy Sequence is also convergent (logically).
 
 ## Monotonicity and Convergence
 ![[Ana1_EN-1.pdf#page=21&rect=68,350,534,528|Ana1_EN-1, p.17]]
 Pretty basic stuff
 ![[Ana1_EN-1.pdf#page=21&rect=69,210,534,299|Ana1_EN-1, p.17]]
-TODO: Understand proofs
-
+Have another look through the proofs on [[Ana1_EN-1.pdf#page=21|Here]], at least as exam preparation.
 ## Extrema
 ![[Ana1_EN-1.pdf#page=23&rect=66,426,533,621|Ana1_EN-1, p.19]]
 minimum and maximum are infimum and suprenums which are actually reached by $x_n$ at some point.

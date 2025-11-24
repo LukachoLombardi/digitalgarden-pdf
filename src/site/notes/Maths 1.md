@@ -15,6 +15,8 @@
 
 <iframe src="/img/user/Xournal++/Homework02.pdf" width="100%" height="600px" title="Homework02.pdf" style="border:1px solid #ccc;"></iframe>
 
+<iframe src="/img/user/Xournal++/Homework04.pdf" width="100%" height="600px" title="Homework04.pdf" style="border:1px solid #ccc;"></iframe>
+
 # Linear Algebra
 [[Linear Algebra Maths 1\|Linear Algebra Maths 1]]
 ## Slides And Handouts
