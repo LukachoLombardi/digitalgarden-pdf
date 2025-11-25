@@ -28,3 +28,15 @@ $$
 |A \times B| = |A| \times |B|
 $$
 (pretty obvious)
+![[Lecture_6.pdf#page=50&rect=-18,416,846,581|Lecture_6, p.10-7]]
+
+# Combinatorial Proofs
+![[Lecture_6.pdf#page=60&rect=-13,480,608,647|Lecture_6, p.12-1]]
+
+> [!WARNING] 
+> Note that these theorems are not symmetric!
+
+TODO: Read the fuckass slide again and try to understand it
+# Drawing Sets
+TODO
+

@@ -3,7 +3,7 @@
 ---
 
 #math #orga
-<iframe src="/img/user/Attachments/InformationSheet.pdf" width="100%" height="600px" title="InformationSheet.pdf" style="border:1px solid #ccc;"></iframe>
+![[InformationSheet.pdf]]
 
 # Summary
 ## Dates
@@ -52,4 +52,4 @@ Basic values in handout
 
 -  **Consultation hours with Prof are also available on StudIP page!**
 ## Basic Timeline/Graph
-<iframe src="/img/user/Attachments/DAS%20Course%20timeline.pdf" width="100%" height="600px" title="DAS Course timeline.pdf" style="border:1px solid #ccc;"></iframe>
+![[DAS Course timeline.pdf]]

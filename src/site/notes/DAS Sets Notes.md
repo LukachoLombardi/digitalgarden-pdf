@@ -39,8 +39,12 @@ $$
 The only empty set!
 
 Sets can also contain other sets (like S = {0, 1, {0, 1}, 2}) -> S has 4 elements
-## Selectors
 
+The size of s ("cardinality") is written as 
+$$
+size=|S|
+$$
+## Selectors
 Basically a foreach loop
 ### Notation
 {${x \in S | P(X)}$}
