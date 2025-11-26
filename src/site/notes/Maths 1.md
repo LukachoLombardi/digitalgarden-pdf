@@ -22,6 +22,7 @@
 ## Slides And Handouts
 
 ![[Foundations_Ana_LinAlg_EN.pdf]]
+
 ![[Math_1_LinAlg_VL03_print_EN.pdf]]
 
 ![[Math_1_LinAlg_VL04_print_EN.pdf]]
