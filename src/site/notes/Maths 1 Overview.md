@@ -3,7 +3,7 @@
 ---
 
 #math #orga
-![[Infosheet_Winter_Semester_2025_2026.pdf]]
+<iframe src="/img/user/Attachments/Infosheet_Winter_Semester_2025_2026.pdf" width="100%" height="900px" title="Infosheet_Winter_Semester_2025_2026.pdf" style="border:1px solid #ccc;"></iframe>
 
 # Homework
 

@@ -7,8 +7,8 @@
 [[Procedural Programming for CS Overview\|Procedural Programming for CS Overview]]
 
 # Slides
-![[ppi-handout_00.pdf]]
+<iframe src="/img/user/Attachments/ppi-handout_00.pdf" width="100%" height="900px" title="ppi-handout_00.pdf" style="border:1px solid #ccc;"></iframe>
 
-![[ppi-handout_01.pdf]]
+<iframe src="/img/user/Attachments/ppi-handout_01.pdf" width="100%" height="900px" title="ppi-handout_01.pdf" style="border:1px solid #ccc;"></iframe>
 
-![[ppi-handout_02.pdf]]
+<iframe src="/img/user/Attachments/ppi-handout_02.pdf" width="100%" height="900px" title="ppi-handout_02.pdf" style="border:1px solid #ccc;"></iframe>
