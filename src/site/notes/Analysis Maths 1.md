@@ -152,4 +152,11 @@ Series are basically running totals of an underlying sequence's $(x_n)_n$'s $x_n
 ![[Ana1_EN-1.pdf#page=30&rect=70,635,534,692|Ana1_EN-1, p.26]]
 Can be proven by utilizing dependence on the Sequence's relating Series.
 
+> [!WARNING] Not bidirectional
+> $x_n$ being a null sequence is a *conditon* for its series being convergent, it does however **not fully satisfy** convergence. See the harmonic series as an example.
+> ![[Ana1_EN-1.pdf#page=31&rect=67,451,533,561|Ana1_EN-1, p.27]]
+
+
 ![[Ana1_EN-1.pdf#page=31&rect=70,330,533,431|Ana1_EN-1, p.27]]
+
+TODO: A lot

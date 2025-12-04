@@ -136,6 +136,7 @@ I guess you could argue something about linear dependence here? A single row of 
 Regarding formal determination of sur-/injectivity and invertibility, see [[#Solvability]] further down below, specifically it's subheadings.
 
 # Linearity
+This determines whether or not we can call a LMS *linear*.
 ![[Math_1_LinAlg_VL04_print_EN.pdf#page=20&rect=110,40,275,801|Math_1_LinAlg_VL04_print_EN, p.20]]
 
 > [!CAUTION] This is not "commutativity"
@@ -205,7 +206,7 @@ The best way to check sur-/injectivity is probably to check the rank and it's re
 
 ### Determining the invertibility
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=8&rect=116,37,508,801&color=red|Math_1_LinAlg_VL06_print_EN, p.8]]
-Can't be bothered to actually understand this right now..
+Can't be bothered to actually understand this right now.
 
 > [!WARNING] Proofs
 > I didn't include the specific proofs here for brevity's sake, but since they're quite straightforward to understand, it's a good idea to read through and follow them, starting from [[Math_1_LinAlg_VL06_print_EN.pdf#page=4|Math_1_LinAlg_VL06_print_EN, p.4]].
@@ -227,7 +228,7 @@ For all $v \in span(v_1,...,v_k)$, any scalar multiplication of v is also part o
 This of course also holds for any linear combination of some $v,v' \in span(...)$.
 
 # Vector Spaces
-The set $R^n$ with the 
+The set $R^n$ satisfying 
 - componentwise addition $+ : R^n + R^n → R^n$ and the 
 - scalar multiplication $· : R^n × R^n → R^n$ is a so-called vector space.  
 
@@ -259,9 +260,23 @@ It's sufficient to just disprove dependence in order to prove independence. Look
 A basis is basically just the smallest possible family whose span maps out its full subspace.
 
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=20&rect=112,41,227,801&color=red|Math_1_LinAlg_VL06_print_EN, p.20]]
-**Read the proof**
+**Read the proof**!
 
 Haven't looked through these yet, so some info on the proofs might follow:
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=21&rect=108,41,235,802&color=red|Math_1_LinAlg_VL06_print_EN, p.21]]
+
+## Dimension of a subspace
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=23&rect=109,43,231,803&color=red|Math_1_LinAlg_VL06_print_EN, p.23]]
-Remember the $dim()$ operator! (Smallest possible family spanning the whole subspace
+Remember the $dim()$ operator! (Size of smallest possible family spanning the whole subspace)
+
+TODO: 2.12.25
+
+### Dimension formula
+
+# Matrix computations
+## Matrix addition
+## Matrix factor multiplication
+## Matrix Matrix multiplication
+## Square Matrix Powers
+
+# The inverse matrix

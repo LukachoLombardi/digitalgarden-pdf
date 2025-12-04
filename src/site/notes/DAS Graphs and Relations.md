@@ -54,3 +54,15 @@ Note that the closure isn't the *modification* that needs to be applied, but the
 There's formal notation for computing these, but I don't think that's relevant right now.
 
 TODO: Add content from missed lecture (17.11.25)
+
+# Common properties and orders
+
+| Common property relations                                          | Ordered relations                                                   |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| ![[Lecture_5-1.pdf#page=16&rect=16,15,380,244\|Lecture_5-1, p.16]] | ![[Lecture_5-1.pdf#page=16&rect=404,17,631,242\|Lecture_5-1, p.16]] |
+
+## Order properties 
+![[Lecture_5-1.pdf#page=21&rect=14,5,776,256|Lecture_5-1, p.21]]
+Just memorize these!
+
+# Equivalence relations
