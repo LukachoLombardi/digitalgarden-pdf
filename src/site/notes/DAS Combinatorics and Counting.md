@@ -81,15 +81,17 @@ Idea: We know $f: A \rightarrow B$ is bijective $\Rightarrow$ $|A| = |B|$
 Let $R \subseteq A \times B, a \in A,b \in B$
 - $deg(a) = |\{b \in B | (a,b) \in \mathbb{R}\}|$
 - $deg(b) = |\{a \in A | (a,b) \in \mathbb{R}\}|$
-So the degree is basically the set of all edges containing $deg$'s argument$deg(a) = |\{b \in B | (a,b) \in \mathbb{R}\}|$
+So the degree is basically the set of all edges connected to $deg$'s argument vertex $deg(a) = |\{b \in B | (a,b) \in \mathbb{R}\}|$
 
-Theorem: $\sum_{a \in A} deg(a) = |R| = \sum_{b \in B} deg(b)$$deg(a)= |\{b \in B | (a,b) \in \mathbb{R}\}|$
+> Theorem: $\sum_{a \in A} deg(a) = |R| = \sum_{b \in B} deg(b);\,deg(a)= |\{b \in B | (a,b) \in \mathbb{R}\}|$
+
 This will partition $R$ into subsets, which $\cup$ will be $\subseteq R$
 - Since $R_a$: all edges touching b
 - $R_b$: all edges touching a
+- $R$ only contains vertices which are part of an edge (from relation/vertex definition).
 Since for any $deg(a) \cap deg(a') = \emptyset$ and the union rule:
 $|R|$ can be represented by the sum of all degrees in $A$ or $B$ (since this sum will only contain each edge once)
 
-TODO: 1.12.25
+	TODO: 1.12.25
 
 

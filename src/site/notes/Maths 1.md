@@ -18,6 +18,8 @@
 <iframe src="/img/user/Xournal++/Homework04.pdf" width="100%" height="900px" title="Homework04.pdf" style="border:1px solid #ccc;"></iframe>
 
 <iframe src="/img/user/Xournal++/Homework05.pdf" width="100%" height="900px" title="Xournal++/Homework05.pdf" style="border:1px solid #ccc;"></iframe>
+
+<iframe src="/img/user/Xournal++/Homework06.pdf" width="100%" height="900px" title="Homework06.pdf" style="border:1px solid #ccc;"></iframe>
 # Linear Algebra
 [[Linear Algebra Maths 1\|Linear Algebra Maths 1]]
 ## Slides And Handouts
@@ -40,3 +42,5 @@
 ## Slides and Handouts
 
 <iframe src="/img/user/Attachments/Ana1_EN-1.pdf" width="100%" height="900px" title="Ana1_EN-1.pdf" style="border:1px solid #ccc;"></iframe>
+
+<iframe src="/img/user/Attachments/Exercise07.pdf" width="100%" height="900px" title="Exercise07.pdf" style="border:1px solid #ccc;"></iframe>

@@ -4,8 +4,12 @@
 
 #math
 
-Everything related to University Mathematics from the DS course.
+Everything related to Undergrad Mathematics from the DS course.
 
+# Modules
 [[Math Prep MOC\|Math Prep MOC]]
 [[Discrete Algebraic Structures\|Discrete Algebraic Structures]]
 [[Maths 1\|Maths 1]]
+
+# Supplemental Materials
+[[Mathematics Online Resources\|Mathematics Online Resources]]

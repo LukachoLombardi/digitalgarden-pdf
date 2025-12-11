@@ -269,7 +269,7 @@ Haven't looked through these yet, so some info on the proofs might follow:
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=23&rect=109,43,231,803&color=red|Math_1_LinAlg_VL06_print_EN, p.23]]
 Remember the $dim()$ operator! (Size of smallest possible family spanning the whole subspace)
 
-TODO: 2.12.25
+TODO: 2.12.25:
 
 ### Dimension formula
 
@@ -280,3 +280,4 @@ TODO: 2.12.25
 ## Square Matrix Powers
 
 # The inverse matrix
+

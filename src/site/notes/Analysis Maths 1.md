@@ -15,10 +15,13 @@
 > [!SUMMARY] Definition
 > A function is generally defined as a mapping between **domain** (let's call that Set X) and **codomain** (Y) values.
 > $$
-f: X \rightarrow Y
-$$
+> f: X \rightarrow Y
+> $$
 
-Notation of all (co-)domain values' mapping:  $$x \mapsto f(x)$$
+Notation of all (co-)domain values' mapping:  
+$$
+x \mapsto f(x)
+$$
 ## "-jectivity" types
 
 - general function: codomain values can have many domain values ($f(x_1)=f(x_2) \rightarrow x_1=x_2$, )
@@ -158,5 +161,49 @@ Can be proven by utilizing dependence on the Sequence's relating Series.
 
 
 ![[Ana1_EN-1.pdf#page=31&rect=70,330,533,431|Ana1_EN-1, p.27]]
+$(s_m)_{m \in \mathbb{N}}$ again describes the series.
+### The Geometric Sequence
+![[Ana1_EN-1.pdf#page=29&rect=242,494,387,543|Ana1_EN-1, p.25]]
+This proof is wedged into an example for some reason. 
+### The Leibniz Rule
+![[Ana1_EN-1.pdf#page=31&rect=68,61,534,179|Ana1_EN-1, p.27]]
+We're basically looking at a series over a cauchy sequence here. No surprise then that the proof for this involves the *Cauchy Criterion* (see more on [[Ana1_EN-1.pdf#page=32|Ana1_EN-1, p.28]]).
 
-TODO: A lot
+### Absolute Convergence
+![[Ana1_EN-1.pdf#page=32&rect=70,138,534,221|Ana1_EN-1, p.28]]
+I don't get all of these Definitions without any clear way to apply them. Maybe something will follow later on. 
+
+It goes without saying that *Absolute Convergence $\Rightarrow$ Convergence*.
+### Operations on Convergent Series
+![[Ana1_EN-1.pdf#page=33&rect=68,119,534,301|Ana1_EN-1, p.29]]
+Ig just memorize this.
+
+### Direct Comparison Tests
+![[Ana1_EN-1.pdf#page=34&rect=70,474,535,624|Ana1_EN-1, p.30]]
+We already need to know about another convergent series to argue like this.
+
+### The Ratio Test
+![[Ana1_EN-1.pdf#page=35&rect=69,513,534,635|Ana1_EN-1, p.31]]
+I like this one.
+
+### The Root Test
+![[Ana1_EN-1.pdf#page=35&rect=66,158,533,278|Ana1_EN-1, p.31]]
+Whatever that means.
+
+### Comparing Convergence Tests
+![[Ana1_EN-1.pdf#page=36&rect=70,347,533,693|Ana1_EN-1, p.32]]
+
+### Series Convergence Testing Summary
+![[Ana1_EN-1.pdf#page=38&rect=49,137,559,696|Ana1_EN-1, p.34]]
+
+
+> [!NOTE] 
+> I think the essence of this chapter is that you should just go fuck yourself. You're not gonna be able to understand or even memorize all of the proofs. Even this diagram is still way to much work considering the fact that you won't even really understand what you're doing.
+
+
+# Topology of the Real Line
+TODO
+# Continuity
+TODO
+
+
