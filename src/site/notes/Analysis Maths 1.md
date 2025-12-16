@@ -31,7 +31,7 @@ $$
 ### Proving mapping types
 
 > [!NOTE] 
-> Surjectivity proofs won't come up on exams
+> Surjectivity proofs won't come up on exams (therefore bijectivity ones won't either).
 
 - injectivity: **Prove** if $f(a) = f(a')$, then $a=a'$
 - not injective: **find** $a \neq a'$ for $f(a) = f(a')$
@@ -200,10 +200,51 @@ Whatever that means.
 > [!NOTE] 
 > I think the essence of this chapter is that you should just go fuck yourself. You're not gonna be able to understand or even memorize all of the proofs. Even this diagram is still way to much work considering the fact that you won't even really understand what you're doing.
 
-
 # Topology of the Real Line
 TODO
 # Continuity
-TODO
+The most intuitive idea of Continuity is probably a given function $f: D \rightarrow R; D \subset \mathbb{R}$ not having any "jumps" in its visual representation (on $D$). We'll explore shortly how we can actually note and describe this formally.
+
+## "Local" Continuity
+First, we need to establish what Continuity means for any $x_0 \in D$:
+> A function $f$ is called Continuous *at* some $x_0 \in D$, if $\lim_{x \to{x_0}} f(x) = f(x_0)$, meaning the limit approaching $x_0$ is equal to $x_0$'s associated codomain value.
+
+Note that $x_0$ is a "unique" member of $D$ here. It counterintuitively isn't part of some pattern $x_1, x_2, x_3, ...$ or similar.
+
+### Special Case: Holes in the Domain
+If our domain has isolated outliers (e.g. $D = [0,5] \cup \{10\}$), we still treat it as continuous.
+
+# "Extended" Continuity
+This is the actual meat and potatoes of what continuity means for a whole function:
+> A function $f$ is called continuous, if the definition of "local" continuity (see above) holds for any $x_0 \in D$.
+
+The slides note this as follows:
+> a function $f$ is called continuous, if for $\forall x_0 \in D \subset \mathbb{R} : \lim_{x_n \in D \to{x_0}} = f(x_0)$, with $(x_n)_n$ being any sequence on $D$.
+
+We can of course also find $\lim = \infty$ or $\lim = - \infty$, meaning there is no limit and therefore no continuity.
+
+![[Ana1_EN-1.pdf#page=50&rect=68,532,535,652|Ana1_EN-1, p.46]]
+
+## Sided Continuity
+![[Ana1_EN-1.pdf#page=50&rect=68,65,535,254|Ana1_EN-1, p.46]]
+Should be easy to imagine visually. This just depends on which side(s) of the graph converge to $f(x_0)$ for $x_n \to x_0$.
+
+### Relation Between Continuity and Sided Continuity
+![[Ana1_EN-1.pdf#page=52&rect=67,153,536,293|Ana1_EN-1, p.48]]
+- (b) means: If the limit (...) exists, then the left-sided and right-sided limit *don't* exist, and may not be the same and equal to y.
+- (c) means: If both the left-sided and right-sided limits exist (in addition to the condition written out below), are the same and equal to y,  then the limit (...) exists. 
+
+![[Ana1_EN-1.pdf#page=53&rect=70,339,534,459|Ana1_EN-1, p.49]]
+Kind of a redefinition.
+
+## $\varepsilon-\delta$ Characterization and Continuity
+![[Ana1_EN-1.pdf#page=53&rect=66,61,536,207|Ana1_EN-1, p.49]]
+This brings us back to the sausage example at the beginning of the script. We basically just define two permissible ranges $\forall \varepsilon > 0$ and $\exists \delta > 0$ around both $y$ and $x_0$ respectively, and require that any $f(x)$, with $x \in D$ in the $\delta$ range around $x_0$, shall be within the $\varepsilon$ range around $y$. There's a proof to this but if it comes up in the exam imma just kill myself.
+
+![[Ana1_EN-1.pdf#page=54&rect=68,322,533,567|Ana1_EN-1, p.50]]
+
+## Some more bullshit implications to remember
+![[Ana1_EN-1.pdf#page=54&rect=67,124,535,266|Ana1_EN-1, p.50]]
+
 
 

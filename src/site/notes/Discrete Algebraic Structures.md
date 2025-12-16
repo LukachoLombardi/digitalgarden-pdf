@@ -39,6 +39,11 @@
 
 <iframe src="/img/user/Attachments/Lecture_7.pdf" width="100%" height="900px" title="Lecture_7.pdf" style="border:1px solid #ccc;"></iframe>
 
+<iframe src="/img/user/Attachments/Lecture_8.pdf" width="100%" height="900px" title="Lecture_8.pdf" style="border:1px solid #ccc;"></iframe>
+
+<iframe src="/img/user/Attachments/Lecture_9.pdf" width="100%" height="900px" title="Lecture_9.pdf" style="border:1px solid #ccc;"></iframe>
+
+
 ![[Lecture_1.pdf#page=15&rect=-20,6,1209,654|Lecture_1, p.7]]
 ## Sets
 See [[DAS Sets Notes\|DAS Sets Notes]]

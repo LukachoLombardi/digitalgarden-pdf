@@ -140,7 +140,7 @@ This determines whether or not we can call a LMS *linear*.
 ![[Math_1_LinAlg_VL04_print_EN.pdf#page=20&rect=110,40,275,801|Math_1_LinAlg_VL04_print_EN, p.20]]
 
 > [!CAUTION] This is not "commutativity"
-> As seen below, being able to write an operation on an element $op(a = b \,op' \, c)$  as $op(a)\, op'\, op(b)$ is **not** called *commutativity*. Hence the specific naming for this property, here specifically regarding vector to vector mappings inside vector space $R^n$:
+> As seen below, being able to write an operation on an element $op(a \,op' \, b)$  as $op(a)\, op'\, op(b)$ is **not** called *commutativity*. Hence the specific namings for this property, here specifically regarding vector to vector mappings inside vector space $R^n$:
 > - ($+$): additive
 > - ($\times$): homogeneous
 > - ($+$) and ($\times$): linear
@@ -281,3 +281,104 @@ TODO: 2.12.25:
 
 # The inverse matrix
 
+TODO: 9.12.25
+TODO: 16.12.25
+
+# The Determinant
+Unrelated to the definition the lecture gives for the determinant $det(A)$ of some matrix $A \in \mathbb{R}^{m \times n}$ (or rather lack thereof), here's a pretty good intuitive definition:
+> The determinant $det(A)$ describes the oriented factor by which $A \in \mathbb{R}^{m \times n}$ stretches any input vector $x$ when applied as $A \times x$. 
+
+ This also applies to stretching a whole coordinate system or a family of vectors. Specifically, when applied to a shape, it will give the stretch factor of its area in 2D, or of its volume in 3D.
+
+The lectures vaguely define it as the area of a Parallelogram spanned by two vectors making up the columns of $A$ in 2D, or the volume of the Parallelepiped spanned by three vectors making up the columns in 3D. This is a very un intuitive definition in my opinion, since intuitively you'd probably just look at the distances spanned by the vectors.
+## The case $det(A) = 0$
+The determinant being equal to 0, that means that the linear transformation using $A$ will squish the system onto a single line, or point. It intuitively also means that the spanned shapes will have $area = 0$.
+
+This also means that the transformation using $A$ reduces the input vectors by at least one dimension!
+
+$det(A) = 0$ can also be inferred by:
+- at least two columns being identical
+- the family of columns being linearly dependent
+## Negative determinants
+A negative determinant means that the transformation will invert the input space. 
+## Computing the Determinant in 2D
+This is a pretty good illustration if you want to understand the formula in depth. It is also the general formula on 2D matrices:
+![Pasted image 20251216181209.png](/img/user/Attachments/Pasted%20image%2020251216181209.png)
+
+Here is a formal proof, I don't think it's important:
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=8&rect=274,45,518,796|Math_1_LinAlg_VL09_print_EN, p.8]]
+
+If we (for 2D spaces) define $det(A) = area(A_{m1},A_{m2})$, we get the following set of rules that this area formula should adhere to:
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=5&rect=111,42,526,800|Math_1_LinAlg_VL09_print_EN, p.5]]
+
+Note: (3) essentially means that switching the columns' order in the input will reverse the sign on the output.
+
+## Computing the Determinant in 3D
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=10&rect=112,40,500,800|Math_1_LinAlg_VL09_print_EN, p.10]]
+
+We build our initial definition of $volume(u,v,w)$ from these rules:
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=12&rect=76,15,491,790|Math_1_LinAlg_VL09_print_EN, p.12]]
+Then we leverage the rule of homogeneity for the volume we established earlier in order to move our actual vector members out of the the volume itself, which will then be either $1$ or $-1$ by usage of the system unit vectors. In case these $e$s are unclear for a 3D space:
+$$
+e_1 = 
+\begin{pmatrix}
+1 \\
+0 \\
+0 
+\end{pmatrix}
+$$
+$$
+e_2 = 
+\begin{pmatrix}
+0 \\
+1 \\
+0 
+\end{pmatrix}
+$$
+$$
+e_3 = 
+\begin{pmatrix}
+0 \\
+0 \\
+1 
+\end{pmatrix}
+$$
+The first definition can then be written as the sum of all possible ordered combinations of $[1,3]$ onto $i,j,k$ without replacement, as applied in the term above. Since we only need to compute the sign for the actual volume function, we can leverage rule (3) from above, turning it into a comparably easy formula (as seen in the last step).
+
+Abstracting back to our matrix $A \in \mathbb{R}^{3 \times 3}$, we can now say that $det(A) = area(u,v,w)$, for columns of $A$ mapped to $u, v, w$ (as in $\{A_mc | m \in n\} = \{u,v,w\}$).
+## The General Case
+This is very it gets fucky.![[Math_1_LinAlg_VL09_print_EN.pdf#page=13&rect=109,42,528,801|Math_1_LinAlg_VL09_print_EN, p.13]]This slide is ass to understand, because it rolls back the concreteness of "area" and "volume" used in the 2D and 3D examples. Since we can't really see beyond the third dimension, we're suddenly back to actual matrices and the very under defined notion of whatever a "determinant" actually is. We actually kind of know the answer to this, having read [[Linear Algebra Maths 1#The Determinant\|Linear Algebra Maths 1#The Determinant]], but since this lecture is based on a very different intuition, we will have to bear with the following:
+
+This syntax is horribly confusing when coming from the last two examples. So just continue thinking in columns (vectors 🤓☝️) and imagine some analogous property we could compute on this "thing's" columns/vectors in $(>3)D$ space, which is again equal to $det$.
+
+### Formula No.1: The Permutation Formula by Leibnitz
+We then treat this case as analogous to the summation we established in 3D, giving us this beautifully stupid term that you will hopefully never have to solve by hand:
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=16&rect=76,12,509,778|Math_1_LinAlg_VL09_print_EN, p.16]]
+This is an additional helper for computing the sign of the system unit vectors determinant for a given:
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=17&rect=76,14,503,784|Math_1_LinAlg_VL09_print_EN, p.17]]
+
+> [!NOTE] The $\#$ operator
+> The $\#$ operator is very badly explained here if it weren't for the examples. It just describes the minimum number of times you have to switch two elements of a tuple until it becomes ordered (ordered without gaps in this case).
+
+In this case it means the "distance" of switches your current tuple of system identity vectors is away from its ordered "base" form.
+
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=18&rect=78,12,522,805|Math_1_LinAlg_VL09_print_EN, p.18]]
+
+### Formula No.2: Determinant using Gauss
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=19&rect=72,11,461,812|Math_1_LinAlg_VL09_print_EN, p.19]]
+"Upper triangular form" is better known as "row echelon form".
+Note how the $b$'s used here are the main diagonal.
+
+Here's a proof if you really care:
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=22&rect=71,7,506,809|Math_1_LinAlg_VL09_print_EN, p.22]]
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=23&rect=368,54,519,823|Math_1_LinAlg_VL09_print_EN, p.23]]
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=24&rect=283,58,467,797|Math_1_LinAlg_VL09_print_EN, p.24]]
+
+### Formula No.3: Laplace Expansion
+First, consider the following Theorem:
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=25&rect=207,39,370,803|Math_1_LinAlg_VL09_print_EN, p.25]]
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=26&rect=114,41,513,803|Math_1_LinAlg_VL09_print_EN, p.26]]
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=27&rect=106,32,518,808|Math_1_LinAlg_VL09_print_EN, p.27]]
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=28&rect=217,45,483,800|Math_1_LinAlg_VL09_print_EN, p.28]]
+
+TODO: Understand this and add explanations for Cramer's rule

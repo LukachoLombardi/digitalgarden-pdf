@@ -92,6 +92,16 @@ This will partition $R$ into subsets, which $\cup$ will be $\subseteq R$
 Since for any $deg(a) \cap deg(a') = \emptyset$ and the union rule:
 $|R|$ can be represented by the sum of all degrees in $A$ or $B$ (since this sum will only contain each edge once)
 
-	TODO: 1.12.25
+Double counting enables us to transform a logical relation between two sets we know about into an equation between the degrees, which can allow us to find formulas or prove ones set up as theses. (Although kind of incomplete, this is a good example: [[Lecture_7.pdf#page=26|Lecture_7, p.6-1]]).
+
+# Inclusion Exclusion Principle
+![[Lecture_7.pdf#page=44&rect=-16,7,1041,648|Lecture_7, p.7-10]]
+Basically just this slide. Since the proof is too complicated, we only really need to memorize this pattern for three given sets.
+
+
+
+TODO: 1.12.25
+TODO: 8.12.25
+TODO: 15.12.25
 
 
