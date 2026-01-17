@@ -270,7 +270,6 @@ Haven't looked through these yet, so some info on the proofs might follow:
 Remember the $dim()$ operator! (Size of smallest possible family spanning the whole subspace)
 
 TODO: 2.12.25:
-
 ### Dimension formula
 
 # Matrix computations
@@ -282,27 +281,28 @@ TODO: 2.12.25:
 # The inverse matrix
 
 TODO: 9.12.25
-TODO: 16.12.25
-
 # The Determinant
 Unrelated to the definition the lecture gives for the determinant $det(A)$ of some matrix $A \in \mathbb{R}^{m \times n}$ (or rather lack thereof), here's a pretty good intuitive definition:
 > The determinant $det(A)$ describes the oriented factor by which $A \in \mathbb{R}^{m \times n}$ stretches any input vector $x$ when applied as $A \times x$. 
 
+(Remember: Oriented means it can be negative).
+
  This also applies to stretching a whole coordinate system or a family of vectors. Specifically, when applied to a shape, it will give the stretch factor of its area in 2D, or of its volume in 3D.
 
-The lectures vaguely define it as the area of a Parallelogram spanned by two vectors making up the columns of $A$ in 2D, or the volume of the Parallelepiped spanned by three vectors making up the columns in 3D. This is a very un intuitive definition in my opinion, since intuitively you'd probably just look at the distances spanned by the vectors.
+The lectures vaguely define it as the area of a Parallelogram spanned by two vectors making up the columns of $A$ in 2D, or the volume of the Parallelepiped spanned by three vectors making up the columns in 3D. This is a very un intuitive definition in my opinion, since intuitively you'd probably just look at the distances spanned by the vectors to approach these questions.
 ## The case $det(A) = 0$
 The determinant being equal to 0, that means that the linear transformation using $A$ will squish the system onto a single line, or point. It intuitively also means that the spanned shapes will have $area = 0$.
 
 This also means that the transformation using $A$ reduces the input vectors by at least one dimension!
 
-$det(A) = 0$ can also be inferred by:
+$det(A) = 0$ can be inferred by:
 - at least two columns being identical
 - the family of columns being linearly dependent
 ## Negative determinants
 A negative determinant means that the transformation will invert the input space. 
+TODO: Put hand rule in here
 ## Computing the Determinant in 2D
-This is a pretty good illustration if you want to understand the formula in depth. It is also the general formula on 2D matrices:
+This is a pretty good illustration if you want to understand the formula in depth. It is the general formula on 2D matrices:
 ![Pasted image 20251216181209.png](/img/user/Attachments/Pasted%20image%2020251216181209.png)
 
 Here is a formal proof, I don't think it's important:
@@ -347,9 +347,9 @@ The first definition can then be written as the sum of all possible ordered comb
 
 Abstracting back to our matrix $A \in \mathbb{R}^{3 \times 3}$, we can now say that $det(A) = area(u,v,w)$, for columns of $A$ mapped to $u, v, w$ (as in $\{A_mc | m \in n\} = \{u,v,w\}$).
 ## The General Case
-This is very it gets fucky.![[Math_1_LinAlg_VL09_print_EN.pdf#page=13&rect=109,42,528,801|Math_1_LinAlg_VL09_print_EN, p.13]]This slide is ass to understand, because it rolls back the concreteness of "area" and "volume" used in the 2D and 3D examples. Since we can't really see beyond the third dimension, we're suddenly back to actual matrices and the very under defined notion of whatever a "determinant" actually is. We actually kind of know the answer to this, having read [[Linear Algebra Maths 1#The Determinant\|Linear Algebra Maths 1#The Determinant]], but since this lecture is based on a very different intuition, we will have to bear with the following:
+This is very it gets fucky.![[Math_1_LinAlg_VL09_print_EN.pdf#page=13&rect=109,42,528,801|Math_1_LinAlg_VL09_print_EN, p.13]]This slide is ass to understand, because it rolls back the concreteness of "area" and "volume" used in the 2D and 3D examples. Since we can't really see beyond the third dimension, we're suddenly back to actual matrices and the very under defined notion of whatever a "determinant" actually is. We actually kind of know the answer to this, having read [[Linear Algebra Maths 1#The Determinant\|Linear Algebra Maths 1#The Determinant]], but since this lecture is based on very different intuition, we will have to bear with the following:
 
-This syntax is horribly confusing when coming from the last two examples. So just continue thinking in columns (vectors 🤓☝️) and imagine some analogous property we could compute on this "thing's" columns/vectors in $(>3)D$ space, which is again equal to $det$.
+This syntax is horribly confusing when coming from the last two examples. So just continue thinking in columns (vectors 🤓☝️) and imagine some area/volume-analogous property we could compute on this "thing's" columns/vectors in $(>3)D$ space, which is again equal to $det$.
 
 ### Formula No.1: The Permutation Formula by Leibnitz
 We then treat this case as analogous to the summation we established in 3D, giving us this beautifully stupid term that you will hopefully never have to solve by hand:
@@ -382,3 +382,8 @@ First, consider the following Theorem:
 ![[Math_1_LinAlg_VL09_print_EN.pdf#page=28&rect=217,45,483,800|Math_1_LinAlg_VL09_print_EN, p.28]]
 
 TODO: Understand this and add explanations for Cramer's rule
+
+### Formula No.4: Cramer's Rule
+this guy named cramer had a rule or sum shit
+
+TODO: 6.1.2025

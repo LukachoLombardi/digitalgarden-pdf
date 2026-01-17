@@ -121,7 +121,6 @@ Basically a function that "converges onto itself", but not necessarily to a sing
 
 > [!INFO] Regular Convergence vs Cauchy sequences
 > Every convergent sequence is also a Cauchy sequence, but not necessarily the other way around! 
-> Every Cauchy Sequence is also convergent (logically).
 
 ## Monotonicity and Convergence
 ![[Ana1_EN-1.pdf#page=21&rect=68,350,534,528|Ana1_EN-1, p.17]]
@@ -201,7 +200,18 @@ Whatever that means.
 > I think the essence of this chapter is that you should just go fuck yourself. You're not gonna be able to understand or even memorize all of the proofs. Even this diagram is still way to much work considering the fact that you won't even really understand what you're doing.
 
 # Topology of the Real Line
-TODO
+## $\varepsilon$-neighborhood
+![[Ana1_EN-1.pdf#page=39&rect=68,67,537,175|Ana1_EN-1, p.35]]
+Basically just defined as "stuff that is in an $\varepsilon$ radius around $x$".
+### Classifications of points using the $\varepsilon$-neighborhood
+![Pasted image 20260117155358.png](/img/user/Attachments/Pasted%20image%2020260117155358.png)
+This is all pretty intuitive actually.
+## Interior, Exterior, Boundaries
+![Pasted image 20260117155655.png](/img/user/Attachments/Pasted%20image%2020260117155655.png)
+
+> [!NOTE] Definition of "boundary"
+> As you will see in a lot of range examples, a set containing an undefined/"limit"-boundary will not be treated as containing its boundaries, e.g. $(1,3)$ or $[1,3)$. The boundaries in these cases would be $\{1,3\}$.
+
 # Continuity
 The most intuitive idea of Continuity is probably a given function $f: D \rightarrow R; D \subset \mathbb{R}$ not having any "jumps" in its visual representation (on $D$). We'll explore shortly how we can actually note and describe this formally.
 
@@ -246,5 +256,7 @@ This brings us back to the sausage example at the beginning of the script. We ba
 ## Some more bullshit implications to remember
 ![[Ana1_EN-1.pdf#page=54&rect=67,124,535,266|Ana1_EN-1, p.50]]
 
+TODO: Combinations on Continuous functions, continuity on compact sets, everything from 18.12.25 (stuff like pole points and continuous extendability)
+TODO: 8.1.26
 
 

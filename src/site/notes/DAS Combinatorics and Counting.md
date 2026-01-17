@@ -79,11 +79,11 @@ Idea: We know $f: A \rightarrow B$ is bijective $\Rightarrow$ $|A| = |B|$
 
 ## Degrees
 Let $R \subseteq A \times B, a \in A,b \in B$
-- $deg(a) = |\{b \in B | (a,b) \in \mathbb{R}\}|$
-- $deg(b) = |\{a \in A | (a,b) \in \mathbb{R}\}|$
-So the degree is basically the set of all edges connected to $deg$'s argument vertex $deg(a) = |\{b \in B | (a,b) \in \mathbb{R}\}|$
+- $deg(a) = |\{b \in B | (a,b) \in R|$
+- $deg(b) = |\{a \in A | (a,b) \in R\}|$
+So the degree is basically the set of all edges connected to $deg$'s argument vertex $deg(a) = |\{b \in B | (a,b) \in R\}|$
 
-> Theorem: $\sum_{a \in A} deg(a) = |R| = \sum_{b \in B} deg(b);\,deg(a)= |\{b \in B | (a,b) \in \mathbb{R}\}|$
+> Theorem: $\sum_{a \in A} deg(a) = |R| = \sum_{b \in B} deg(b);\,deg(a)= |\{b \in B | (a,b) \in R\}|$
 
 This will partition $R$ into subsets, which $\cup$ will be $\subseteq R$
 - Since $R_a$: all edges touching b
@@ -98,10 +98,13 @@ Double counting enables us to transform a logical relation between two sets we k
 ![[Lecture_7.pdf#page=44&rect=-16,7,1041,648|Lecture_7, p.7-10]]
 Basically just this slide. Since the proof is too complicated, we only really need to memorize this pattern for three given sets.
 
-
-
 TODO: 1.12.25
+
+# The Pigeonhole Principle
+# Ramsey's Theorem
+
 TODO: 8.12.25
 TODO: 15.12.25
+TODO: 5.1.25
 
 
