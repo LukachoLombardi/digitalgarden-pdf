@@ -41,11 +41,17 @@
 
 <iframe src="/img/user/Attachments/Lecture_8.pdf" width="100%" height="900px" title="Lecture_8.pdf" style="border:1px solid #ccc;"></iframe>
 
+<iframe src="/img/user/Attachments/Lecture_11.pdf" width="100%" height="900px" title="Lecture_11.pdf" style="border:1px solid #ccc;"></iframe>
+
 <iframe src="/img/user/Attachments/Lecture_9.pdf" width="100%" height="900px" title="Lecture_9.pdf" style="border:1px solid #ccc;"></iframe>
 
 <iframe src="/img/user/Attachments/Lecture_10.pdf" width="100%" height="900px" title="Lecture_10.pdf" style="border:1px solid #ccc;"></iframe>
 
+<iframe src="/img/user/Attachments/Lecture_11.pdf" width="100%" height="900px" title="Lecture_11.pdf" style="border:1px solid #ccc;"></iframe>
 
+<iframe src="/img/user/Attachments/Lecture_12.pdf" width="100%" height="900px" title="Lecture_12.pdf" style="border:1px solid #ccc;"></iframe>
+
+<iframe src="/img/user/Attachments/Lecture_13.pdf" width="100%" height="900px" title="Lecture_13.pdf" style="border:1px solid #ccc;"></iframe>
 
 ![[Lecture_1.pdf#page=15&rect=-20,6,1209,654|Lecture_1, p.7]]
 ## Sets

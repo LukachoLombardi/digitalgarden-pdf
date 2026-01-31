@@ -199,7 +199,8 @@ This is equivalent with surjectivity when treating the LES as a mapping. This im
 
 ### Unique solvability (injectivity)
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=6&rect=113,36,511,804&color=red|Math_1_LinAlg_VL06_print_EN, p.6]]
-The most straightforward way to determine this case is probably to see if the kernel is $\{o\}$.
+![Pasted image 20260131174055.png](/img/user/Attachments/Pasted%20image%2020260131174055.png)
+The most straightforward way to determine this case is probably to see if the kernel is $\{o\}$, or if the determinant is $\neq 0$.
 
 ### Determining the solvability
 The best way to check sur-/injectivity is probably to check the rank and it's relation to $m,n$.
@@ -268,19 +269,114 @@ Haven't looked through these yet, so some info on the proofs might follow:
 ## Dimension of a subspace
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=23&rect=109,43,231,803&color=red|Math_1_LinAlg_VL06_print_EN, p.23]]
 Remember the $dim()$ operator! (Size of smallest possible family spanning the whole subspace)
-
-TODO: 2.12.25:
-### Dimension formula
-
+![[Math_1_LinAlg_VL06_print_EN.pdf#page=24&rect=195,36,386,801|Math_1_LinAlg_VL06_print_EN, p.24]]
 # Matrix computations
 ## Matrix addition
+Matrix addition is a **component-wise** operation. To add two matrices, they **must have the same dimensions** (e.g., both must be m×n). You simply add the corresponding elements from each matrix.
+- **Rule:** $A+B=C$, where $c_{ij​}=a_{ij​}+b_{ij}$​.
+- **Properties:** It is both commutative ($A+B=B+A$) and associative.
 ## Matrix factor multiplication
+Should be self explanatory, just multiply every matrix cell with a factor.
 ## Matrix Matrix multiplication
+To multiply matrix A by matrix B, the number of **columns in A** must equal the number of **rows in B**. The resulting matrix has the rows of the first and the columns of the second.
+- **The Dot Product Rule:** The element at row i and column j in the resulting matrix is the dot product of the $i$th row of A and the $j$th column of B.
+- **Crucial Note:** Unlike regular numbers, matrix multiplication is **not commutative** ($AB \neq BA$ in most cases).
+The result of $C = AB$ can be seen as the resulting vectors from applying every column of $B$ to $A$ being written as the columns of $C$.
 ## Square Matrix Powers
-
+Matrix exponentiation is only defined for **square matrices** (n×n). If a matrix A is square, you can multiply it by itself multiple times.
+- **Notation:** $Ak=A⋅A⋅⋯⋅A$ ($k$ times).
+- **Identity:** $A^0=I$, where I is the identity matrix (the matrix equivalent of the number 1).
 # The inverse matrix
+The inverse of a square matrix A is denoted as $A^{−1}$. It is the matrix that "undoes" the transformation of A.
+- **The Identity Property:** $A⋅A^{−1}=I$and $A^{−1}⋅A=I$.
+- **Invertibility:** Not all matrices have an inverse. A matrix must be square and its **determinant must not be zero** ($det(A) \neq 0$) to be "invertible" or "non-singular."
+- **Solving Equations:** Inverses are used to solve matrix equations like $Ax=b$ by calculating $x=A^{−1}b$.
+For invertible Matrices, the inverse is identical to the transpose.
 
-TODO: 9.12.25
+### What's the transpose?
+You basically just switch the rows and columns when transposing a matrix, so for 
+$$
+A = 
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
+$$
+$$
+A^T = 
+\begin{bmatrix}
+1 & 3 \\
+2 & 4
+\end{bmatrix}
+$$
+#### Some Computation Rules:
+![[Math_1_LinAlg_VL08_print_EN.pdf#page=4&rect=107,39,315,804|Math_1_LinAlg_VL08_print_EN, p.4]]
+![[Math_1_LinAlg_VL08_print_EN.pdf#page=5&rect=127,38,379,808|Math_1_LinAlg_VL08_print_EN, p.5]]
+# LU Decomposition
+The LU Decomposition is an approach to simplify the solution of an LES $Ax = b$, by basically "recording" the steps needed to reach row echelon form in a separate matrix. This allows faster computations when solving the same LES for different inputs, since our transformation is now independent from the augmented column.
+
+## Separating A into Lower and Upper
+To reach $LU = A$, we form so called *lower* and *upper* *triangular matrices*. This is best demonstrated through intuition.
+E.g.:
+$$
+L = 
+\begin{bmatrix}
+1 & 0 & 0 \\
+1 & 1 & 0 \\
+1 & 1 & 1
+\end{bmatrix}
+$$
+$$
+U = 
+\begin {bmatrix}
+1 & 1 & 1 \\
+0 & 1 & 1 \\
+0 & 0 & 1
+\end{bmatrix}
+$$
+
+### My explanation™
+Now how do we do this decomposition on an actual matrix? First, it may be important to understand what exactly the transformation $L$ on $U$ actually means. We should already be aware of the fact, that if $L = I \Rightarrow LU = U$. 
+
+You can spend some time rotating and computing matrices in your head to get an intuition on why this is, but simply speaking, $IU$ can just be seen as *"for every row $ur_m$ of $U$, add that row **once** to the equivalent row of the resulting matrix"*. 
+
+Can you see where this is going? I'm going to make it easy for you: our left hand matrix in the multiplication can be used to fully represent the transformation steps we have taken to get our right hand matrix to its current form. Specifically, the row modifications are recorded in it in the following form - where any $l_{mn}$ represents how often we add row $ur_n$ of $U$ to row $ar_m$ of the resulting matrix $A$ (just pretend this table is a matrix, can't use $\LaTeX$ packages in obsidian):
+
+|        | $ur_1$ | $ur_2$ | $ur_3$ | $ur_4$ |
+| ------ | ------ | ------ | ------ | ------ |
+| $ur_1$ | 1      | 0      | 0      | 0      |
+| $ur_2$ | 1      | 1      | 0      | 0      |
+| $ur_3$ | 0      | 2      | 1      | 0      |
+| $ur_4$ | 0      | 0      | 0      | 1      |
+When applying this $L$ to $U$ as in $LU = A$, read it as: 
+- use $1 \times$row 1 of $U$ for row $1$ of $A$
+- use $1\times$row 1 $+$ $1\times$row 2 for row $2$
+- use ($0\times$row 1 $+$) $2\times$row 2 $+$ $1\times$row 3 for row $3$
+- use $1\times$row 4 for row 4
+
+### The Algorithm by Hand
+Now that we've gotten this out of the way, let's see how we would use this fact to compute our $LU = A$:
+- Instead of $A$, write $I \times A$
+- Transform A into row echelon form (while only modifying rows using rows above it!)
+- While transforming, note every operation you make into the associated cell of your left matrix as seen above,  **times $-1$**! (this is important because our left-hand matrix shows how to **revert** the transformation we executed, not how to turn the original matrix into row echelon form)
+	- e.g. we add row $1$ $\times 3$ to row $2$: write $-3$ to $l_{21}$
+
+There you go! You've successfully performed this ungodly procedure by hand, something that will **definitely** be extremely important in your MS Teams centric Desk-Job 5 years from now!
+## Computing $Ax = b$ using LU Decomposition
+This is the moment we've all been waiting for:
+![[Math_1_LinAlg_VL08_print_EN.pdf#page=7&rect=408,53,486,739|Math_1_LinAlg_VL08_print_EN, p.7]]
+Basically, for $LUx = b$ (remember, matrix multiplications are read right to left!), we:
+- compute $Ux (=y)$
+- then solve $Uy = b$, oh wait, $U$ is already in row echelon form, yippee!
+Do you see why the LU Decomposition approach is actually pretty cool?
+## Some more yapping
+Actually, this approach is already somewhat optimized, which is why even with the background knowledge of "recording", it might seem un-intuitive. 
+
+The first instinct upon discovering this relation would probably be to just keep the transformation of $A$ to row echelon form, and then just apply it to any augmentation of $A$, right? As in keeping $A$ as is, then applying our transformation matrix $T$ to $[A | b]$ for every single system. The thing is that this still requires us to think about individual entries of $b$, adding them together through our transformation and so on...
+
+This is why the LU Decomposition is actually so smart:
+- We keep our $A$ in row echelon form ($U$), but don't just ignore away the operations we made on i (remember, we can't just write $Tx = b$ without transforming $b$ as well!). instead we keep their reverse in $L$, allowing us to write $LU$ as an actual complete stand in for $A$.
+- At that point we *do* have to solve two different LES, but due to sticking to triangular matrices, these are already in row echelon form and only require us two write out the actual result vector calculations!
 # The Determinant
 Unrelated to the definition the lecture gives for the determinant $det(A)$ of some matrix $A \in \mathbb{R}^{m \times n}$ (or rather lack thereof), here's a pretty good intuitive definition:
 > The determinant $det(A)$ describes the oriented factor by which $A \in \mathbb{R}^{m \times n}$ stretches any input vector $x$ when applied as $A \times x$. 
@@ -381,9 +477,36 @@ First, consider the following Theorem:
 ![[Math_1_LinAlg_VL09_print_EN.pdf#page=27&rect=106,32,518,808|Math_1_LinAlg_VL09_print_EN, p.27]]
 ![[Math_1_LinAlg_VL09_print_EN.pdf#page=28&rect=217,45,483,800|Math_1_LinAlg_VL09_print_EN, p.28]]
 
-TODO: Understand this and add explanations for Cramer's rule
-
 ### Formula No.4: Cramer's Rule
-this guy named cramer had a rule or sum shit
+TODO: this guy named cramer had a rule or sum shit (this is just memorization anyways)
 
-TODO: 6.1.2025
+# Affine Subspaces
+![[Math_1_LinAlg_VL10_print_EN.pdf#page=2&rect=133,41,275,803|Math_1_LinAlg_VL10_print_EN, p.2]]
+Basically an Affine Subspace is a subspace $\subseteq R^n$ after being moved by a vector $p \in R^n$.
+![[Math_1_LinAlg_VL10_print_EN.pdf#page=3&rect=150,19,455,814|Math_1_LinAlg_VL10_print_EN, p.3]]
+# Properties of Scalar Products
+![[Math_1_LinAlg_VL10_print_EN.pdf#page=4&rect=133,32,491,813|Math_1_LinAlg_VL10_print_EN, p.4]]
+# Distances/The Norm
+This again is High School level stuff. The length/distance/norm of a vector $v \in R^n$ is just $||v|| = \sqrt{v_1^2 + v_2^2 + ... + v_n^2}$
+of course, this also means that $v \cdot v = ||v||^2$
+# Orthogonal Projections onto Subspaces
+you actually paid attention in this one so write shit down.
+
+## Gram Matrices
+
+# Orthogonal Systems and Bases
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=2&rect=161,38,481,805|Math_1_LinAlg_VL12_13_print_EN-1, p.2]]
+
+## Linear Independence of OGS
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=4&rect=116,37,220,803|Math_1_LinAlg_VL12_13_print_EN-1, p.4]]
+(This should be self evident, as any given vector cannot be linearly dependent on any arbitrary orthogonal vector or vectors).
+
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=5&rect=59,36,520,803|Math_1_LinAlg_VL12_13_print_EN-1, p.5]]
+
+> [!DANGER] Fuck this Fuckass Slide
+> Note that the $G(B) \times \alpha = ...$ relates to an OGB, **NOT** an ONB, as the ordering of the text above would suggest.
+
+## Fourier Expansions
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=6&rect=129,39,413,801|Math_1_LinAlg_VL12_13_print_EN-1, p.6]]
+
+TODO: 21.01

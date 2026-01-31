@@ -200,21 +200,41 @@ Whatever that means.
 > I think the essence of this chapter is that you should just go fuck yourself. You're not gonna be able to understand or even memorize all of the proofs. Even this diagram is still way to much work considering the fact that you won't even really understand what you're doing.
 
 # Topology of the Real Line
-## $\varepsilon$-neighborhood
+## $\varepsilon$-Neighborhood
 ![[Ana1_EN-1.pdf#page=39&rect=68,67,537,175|Ana1_EN-1, p.35]]
 Basically just defined as "stuff that is in an $\varepsilon$ radius around $x$".
-### Classifications of points using the $\varepsilon$-neighborhood
-![Pasted image 20260117155358.png](/img/user/Attachments/Pasted%20image%2020260117155358.png)
+### Classifications of Points using the $\varepsilon$-neighborhood
+![[Ana1_EN-1.pdf#page=40&rect=70,432,534,624|Ana1_EN-1, p.36]]
 This is all pretty intuitive actually.
 ## Interior, Exterior, Boundaries
-![Pasted image 20260117155655.png](/img/user/Attachments/Pasted%20image%2020260117155655.png)
-
+$\dot{\cup}$ means *disjoint union*, so $a \dot{\cup}b$ means $a \cup b \wedge a \cap b = 0$.
+![[Ana1_EN-1.pdf#page=40&rect=68,96,535,259|Ana1_EN-1, p.36]]
+Also note the Complement $A^c = \mathbb{R} \setminus A$.
 > [!NOTE] Definition of "boundary"
 > As you will see in a lot of range examples, a set containing an undefined/"limit"-boundary will not be treated as containing its boundaries, e.g. $(1,3)$ or $[1,3)$. The boundaries in these cases would be $\{1,3\}$.
 
+## Open and Closed Sets
+![[Ana1_EN-1.pdf#page=42&rect=68,394,536,654|Ana1_EN-1, p.38]]
+
+> [!DANGER] Stupid Nomenclature
+> If you look at the definitions of "open" and "closed" sets, you'll pick up on the fact they run contrary to  most people's intuition. They simply do not represent the property you would probably associate with these words normally. Also note (from the script) that they are not exclusive or opposites.
+- **Open Sets** *only* contain their own interior points, meaning they *can't* have a defined boundary. Therefore, a set like $[1,2]$ is in fact **not open**, while the set $(1,2)$ **is**.
+- **Closed Sets** are the complement to any open set. 
+	- So they *can* contain their own boundary, if their complement doesn't. (*strictly closed*).
+	- They can also not contain it, given their complement does (making them ***closed and open* at the same time**!) $\Rightarrow$ only case of "double-type" (i think?)
+## Combining Sets
+![[Ana1_EN-1.pdf#page=43&rect=68,354,537,548|Ana1_EN-1, p.39]]
+## Bounded Sets
+![[Ana1_EN-1.pdf#page=44&rect=69,204,534,621|Ana1_EN-1, p.40]]
+## Compact Sets
+Compactness is really just a simplified set of properties that, if we manage to get any given set to adhere to, will give us access to a lot of already discovered relations, properties, proofs and so on. So for now just tread the term "Compact" as an arbitrary definition (which you should of course remember!), don't try to guess it from your existing understanding of the term.
+![[Ana1_EN-1.pdf#page=45&rect=70,280,532,606|Ana1_EN-1, p.41]]
+Note that "every sequence from $A$" just means "any sequence with $A$ as its codomain".
+![[Ana1_EN-1.pdf#page=45&rect=69,191,536,258|Ana1_EN-1, p.41]]
+![[Ana1_EN-1.pdf#page=46&rect=69,501,534,559|Ana1_EN-1, p.42]]
+
 # Continuity
 The most intuitive idea of Continuity is probably a given function $f: D \rightarrow R; D \subset \mathbb{R}$ not having any "jumps" in its visual representation (on $D$). We'll explore shortly how we can actually note and describe this formally.
-
 ## "Local" Continuity
 First, we need to establish what Continuity means for any $x_0 \in D$:
 > A function $f$ is called Continuous *at* some $x_0 \in D$, if $\lim_{x \to{x_0}} f(x) = f(x_0)$, meaning the limit approaching $x_0$ is equal to $x_0$'s associated codomain value.
@@ -255,8 +275,36 @@ This brings us back to the sausage example at the beginning of the script. We ba
 
 ## Some more bullshit implications to remember
 ![[Ana1_EN-1.pdf#page=54&rect=67,124,535,266|Ana1_EN-1, p.50]]
+## Combinations on Continuous Functions
+![[Ana1_EN-1.pdf#page=55&rect=68,202,536,273|Ana1_EN-1, p.51]]
+![[Ana1_EN-1.pdf#page=56&rect=68,405,536,478|Ana1_EN-1, p.52]]
+Seems intuitive, still don't understand the proofs.
+## Continuity on Compact Sets
+![[Ana1_EN-1.pdf#page=57&rect=68,477,535,535|Ana1_EN-1, p.53]]
+![[Ana1_EN-1.pdf#page=57&rect=69,298,535,366|Ana1_EN-1, p.53]]
+## The Intermediate Value Theorem
+![[Ana1_EN-1.pdf#page=58&rect=69,569,535,661|Ana1_EN-1, p.54]]
+I don't really get what you need to formally prove here?
+- yes, if a function without codomain jumps crosses from negative to positive, it *will* have to hit 0 at some point.
+- "$f(a) < f(x) < f(b)$ has $x \in [a,b]$" seriously?
+![Pasted image 20260118003649.png](/img/user/Attachments/Pasted%20image%2020260118003649.png)
+## Continuity and the Inverse Function
 
-TODO: Combinations on Continuous functions, continuity on compact sets, everything from 18.12.25 (stuff like pole points and continuous extendability)
+# Elementary Functions
+## Monomials
+### Inverse
+## Polynomials
+## Power Series
+## Exponentials
+### Inverse
+## Trigonometrics
+
+# Differentiation in One Variable
+## The Basic Idea of Differentiation
+This should all be intuitive for you by now, but just in case:
+![[Ana1_EN-1.pdf#page=84&rect=67,375,537,509|Ana1_EN-1, p.80]]
+
+TODO: everything from 18.12.25 (stuff like pole points and continuous extendability)
 TODO: 8.1.26
 
 

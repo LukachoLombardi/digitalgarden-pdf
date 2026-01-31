@@ -97,12 +97,10 @@ Double counting enables us to transform a logical relation between two sets we k
 # Inclusion Exclusion Principle
 ![[Lecture_7.pdf#page=44&rect=-16,7,1041,648|Lecture_7, p.7-10]]
 Basically just this slide. Since the proof is too complicated, we only really need to memorize this pattern for three given sets.
-
-TODO: 1.12.25
-
 # The Pigeonhole Principle
 # Ramsey's Theorem
 
+TODO: 1.12.25
 TODO: 8.12.25
 TODO: 15.12.25
 TODO: 5.1.25

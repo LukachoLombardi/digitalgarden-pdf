@@ -43,6 +43,10 @@
 <iframe src="/img/user/Attachments/Math_1_LinAlg_VL09_print_EN.pdf" width="100%" height="900px" title="Math_1_LinAlg_VL09_print_EN.pdf" style="border:1px solid #ccc;"></iframe>
 
 <iframe src="/img/user/Attachments/Math_1_LinAlg_VL10_print_EN.pdf" width="100%" height="900px" title="Math_1_LinAlg_VL10_print_EN.pdf" style="border:1px solid #ccc;"></iframe>
+
+<iframe src="/img/user/Attachments/Math_1_LinAlg_VL11_print_EN.pdf" width="100%" height="900px" title="Math_1_LinAlg_VL11_print_EN.pdf" style="border:1px solid #ccc;"></iframe>
+
+<iframe src="/img/user/Attachments/Math_1_LinAlg_VL12_13_print_EN-1.pdf" width="100%" height="900px" title="Math_1_LinAlg_VL12_13_print_EN-1.pdf" style="border:1px solid #ccc;"></iframe>
 # Analysis
 [[Analysis Maths 1\|Analysis Maths 1]]
 ## Slides and Handouts
