@@ -489,8 +489,20 @@ Basically an Affine Subspace is a subspace $\subseteq R^n$ after being moved by 
 # Distances/The Norm
 This again is High School level stuff. The length/distance/norm of a vector $v \in R^n$ is just $||v|| = \sqrt{v_1^2 + v_2^2 + ... + v_n^2}$
 of course, this also means that $v \cdot v = ||v||^2$
+![[Math_1_LinAlg_VL10_print_EN.pdf#page=5&rect=107,39,344,803|Math_1_LinAlg_VL10_print_EN, p.5]]
+![[Math_1_LinAlg_VL10_print_EN.pdf#page=6&rect=107,39,240,806|Math_1_LinAlg_VL10_print_EN, p.6]]
+
+## Parameter and Normal Forms
+![[Math_1_LinAlg_VL10_print_EN.pdf#page=7&rect=108,41,268,802|Math_1_LinAlg_VL10_print_EN, p.7]]
+![[Math_1_LinAlg_VL10_print_EN.pdf#page=8&rect=109,40,394,804|Math_1_LinAlg_VL10_print_EN, p.8]]
+![[Math_1_LinAlg_VL10_print_EN.pdf#page=9&rect=132,42,491,805|Math_1_LinAlg_VL10_print_EN, p.9]]
+
+## Calculating Distances Between stuff
+![[Math_1_LinAlg_VL10_print_EN.pdf#page=15&rect=108,41,519,802|Math_1_LinAlg_VL10_print_EN, p.15]]
+![[Math_1_LinAlg_VL10_print_EN.pdf#page=16&rect=108,40,538,801|Math_1_LinAlg_VL10_print_EN, p.16]]
+![[Math_1_LinAlg_VL10_print_EN.pdf#page=17&rect=168,40,327,801|Math_1_LinAlg_VL10_print_EN, p.17]]
 # Orthogonal Projections onto Subspaces
-you actually paid attention in this one so write shit down.
+TODO: you actually paid attention in this one so write shit down.
 
 ## Gram Matrices
 
