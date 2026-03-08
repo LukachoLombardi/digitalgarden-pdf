@@ -4,7 +4,7 @@
 
 # Some Notation
 ## Sets
-See [[Discrete Algebraic Structures#A set\|this]]
+See [[Discrete Algebraic Structures#A set\|Discrete Algebraic Structures#A set]]
 
 > [!INFO] Profs notation
 > Prof specified $S=\{...\}$ as $S:=\{...\}$
@@ -42,26 +42,49 @@ For $x,y\in\mathbb{R}$:
 - $|a*b| = |x| * |y|$
 - $|x+y|\le |x| + |y|$
 ## Sum Notation
-From: [[Foundations_Ana_LinAlg_EN.pdf#page=7&offset=,212,|Foundations_Ana_LinAlg_EN, p.3]]
+From: [Foundations_Ana_LinAlg_EN, p.3](/img/user/Attachments/Foundations_Ana_LinAlg_EN.pdf)
 ![Pasted image 20251021135417.png](/img/user/Attachments/Pasted%20image%2020251021135417.png)
 ### Index Shifts
-From: [[Foundations_Ana_LinAlg_EN.pdf#page=12|Foundations_Ana_LinAlg_EN, p.8]]
+From: [Foundations_Ana_LinAlg_EN, p.8](/img/user/Attachments/Foundations_Ana_LinAlg_EN.pdf)
 ![Pasted image 20251021140205.png](/img/user/Attachments/Pasted%20image%2020251021140205.png)
 ## Product Notation
-From: [[Foundations_Ana_LinAlg_EN.pdf#page=11|Foundations_Ana_LinAlg_EN, p.7]]
+From: [Foundations_Ana_LinAlg_EN, p.7](/img/user/Attachments/Foundations_Ana_LinAlg_EN.pdf)
 ![Pasted image 20251021135700.png](/img/user/Attachments/Pasted%20image%2020251021135700.png)
 
 > [!NOTE] Sums and products
 > Commutative, Associative and Distributive laws apply to sums and products
 
 # Vector Recap
-TODO: Write down the stuff from [[Math_1_LinAlg_VL03_print_EN.pdf]] that you feel worth remembering
+I'm gonna gloss over most of this since you probably know about it from High-School. The exact slides can be found in [Math_1_LinAlg_VL03_print_EN.pdf](/img/user/Attachments/Math_1_LinAlg_VL03_print_EN.pdf).
+## Basic Rules
+- Real Vectors are defined in $\mathbb{R}^n$, $n$ being the dimensions of the vector.
+- Vectors can be scaled by a factor $\alpha$ (called scalar multiplication), multiplying all its rows/members by that factor.
+- Two vectors of size $n$ can be added by adding every row of the two
+- Two vectors of size $n$ can be multiplied using the *dot product*, denoted through $<v_1,v_2>$ or $v_1 \circ v_2$. 
+	- This yields the scalar form $v_{11} \times v_{21} + v_{12} \times v_{22} + ... + v_{1n} \times v_{2n}$
+	- This scalar is shows the cosine value of the angle between two normalized vectors.
+	- If The dot product is $=0$, the two vectors are always orthogonal to each other.
+- The cross product of two $v \in \mathbb{R}^n$ can be formed like this: ![[Math_1_LinAlg_VL03_print_EN.pdf#page=13&rect=30,608,566,718|Math_1_LinAlg_VL03_print_EN, p.13]]![[Math_1_LinAlg_VL03_print_EN.pdf#page=13&rect=37,140,315,319|Math_1_LinAlg_VL03_print_EN, p.13]]
+## Special vectors
+- The Zero Vector $o$: Zero for all elements
+- Canonical Unit Vector for an $n$'th dimension: A vector $\in R^{\geq n}$ which is $o$ but has its $n$'th element $= 1$.
+## Linear Combinations
+![[Math_1_LinAlg_VL03_print_EN.pdf#page=9&rect=29,119,567,366|Math_1_LinAlg_VL03_print_EN, p.9]]
 
+## Representing Spacial Sets
+Just remember that most sets have parameter and normal forms (e.g. lines and planes).
+![[Math_1_LinAlg_VL03_print_EN.pdf#page=12&rect=29,582,567,725|Math_1_LinAlg_VL03_print_EN, p.12]]
+![[Math_1_LinAlg_VL03_print_EN.pdf#page=12&rect=246,105,579,369|Math_1_LinAlg_VL03_print_EN, p.12]]
+
+## Affine and Convex Combinations
+![[Math_1_LinAlg_VL03_print_EN.pdf#page=7&rect=30,204,567,331|Math_1_LinAlg_VL03_print_EN, p.7]]
+A convex combination is of course $\subseteq$ affine combination. 
+Both yield a position vector on the line through $A$ and $B$.
+Only Convex Combinations yield a position vector which is *between* $A$ and $B$.
 # Linear Equation Systems (LES)
 ## Basic Definition
 ![[Math_1_LinAlg_VL04_print_EN.pdf#page=4&rect=131,40,487,806|Math_1_LinAlg_VL04_print_EN, p.4]]
 Not really all that important, you learned this in High School.
-
 ## Graphic representation
 You can graph LES with n=2 as linear graphs and n=3 as planes. You can't graph beyond that, since we can't see in 4D. The definitive intersection pinpoints the LES' result. This is also a pretty nice way to demonstrate special cases of solution sets $\mathbb{L}$:
 n=2:
@@ -133,7 +156,7 @@ You can try memorizing this:
 ~~But I honest to god have no fucking idea how you're supposed to apply this to arbitrary LMS. I'm not even sure LeBorne even made an attempt to explain it.
 I guess you could argue something about linear dependence here? A single row of the matrix might produce the same output for two different vector mults, but as long as the other rows aren't literally identical to it, they will produce a value different from the one contained in the "original" output. So as long as that second condition is satisfied, LMS' are bijective. Or I could be completely wrong about this idk~~
 
-Regarding formal determination of sur-/injectivity and invertibility, see [[#Solvability]] further down below, specifically it's subheadings.
+Regarding formal determination of sur-/injectivity and invertibility, see [[Linear Algebra Maths 1#Solvability\|#Solvability]] further down below, specifically it's subheadings.
 
 # Linearity
 This determines whether or not we can call a LMS *linear*.
@@ -149,8 +172,7 @@ This determines whether or not we can call a LMS *linear*.
 ![[Math_1_LinAlg_VL04_print_EN.pdf#page=21&rect=137,37,326,806|Math_1_LinAlg_VL04_print_EN, p.21]]
 
 # Solving LES
-Mostly repeating stuff from HS, TODO: Write down some theorems and stuff.
-
+I'm not gonna recap this. The concept of augmented matrices and the Gauss/Gauss-Jordan Algorithm are explained in [Math_1_LinAlg_VL05_print_EN, p.1](/img/user/Attachments/Math_1_LinAlg_VL05_print_EN.pdf).
 ## Some additional terminology
 - **row echelon form**: LES in which you can draw a line proceeding one to the bottom and at least one to the right per step, which only contains zeroed out elements below it.
 - **pivot element**: (nonzero) Element that is used to zero out elements in rows below it
@@ -165,11 +187,9 @@ If all LES variables are dependent, the solution is unique. One free variable al
 
 ## The Kernel
 ![[Math_1_LinAlg_VL05_print_EN.pdf#page=20&rect=106,40,313,802&color=red|Math_1_LinAlg_VL05_print_EN, p.20]]
-
 The kernel is also called nullspace (that's a way better name imo).
 
-The Solution to the inhomogeneous LES is a linear combination of the unique inhomogeneous solution and arbitrary Kernel member vectors, i.e. solutions for the homogeneous system. ([[Math_1_LinAlg_VL05_print_EN.pdf#page=21|Math_1_LinAlg_VL05_print_EN, p.21]])
-
+The Solution to the inhomogeneous LES is a linear combination of the unique inhomogeneous solution and arbitrary Kernel member vectors, i.e. solutions for the homogeneous systems. ([Math_1_LinAlg_VL05_print_EN, p.21](/img/user/Attachments/Math_1_LinAlg_VL05_print_EN.pdf))
 ## Noting infinite solutions spaces
 ![[Math_1_LinAlg_VL05_print_EN.pdf#page=24&rect=72,38,513,803|Math_1_LinAlg_VL05_print_EN, p.24]]
 (at least that's what I think this is good for)
@@ -190,7 +210,7 @@ These are both true.
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=3&rect=109,41,510,803&color=red|Math_1_LinAlg_VL06_print_EN, p.3]]
 The most important takeaway is probably that a $b$ has to be an element of $f_A: x \mapsto Ax :=b$'s codomain, meaning of $Ran(A)$, in order to create a solvable LES.
 
-In addition to [[#Some additional terminology]], $rank(A) := m \leq n$ for the LES to be solvable.
+In addition to [[Linear Algebra Maths 1#Some additional terminology\|#Some additional terminology]], $rank(A) := m \leq n$ for the LES to be solvable.
 Some additional equivalent statements:
 
 ### Unconditional solvability (surjectivity)
@@ -210,7 +230,7 @@ The best way to check sur-/injectivity is probably to check the rank and it's re
 Can't be bothered to actually understand this right now.
 
 > [!WARNING] Proofs
-> I didn't include the specific proofs here for brevity's sake, but since they're quite straightforward to understand, it's a good idea to read through and follow them, starting from [[Math_1_LinAlg_VL06_print_EN.pdf#page=4|Math_1_LinAlg_VL06_print_EN, p.4]].
+> I didn't include the specific proofs here for brevity's sake, but since they're quite straightforward to understand, it's a good idea to read through and follow them, starting from [Math_1_LinAlg_VL06_print_EN, p.4](/img/user/Attachments/Math_1_LinAlg_VL06_print_EN.pdf).
 
 ### Specific implications for square matrices
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=9&rect=121,34,437,803&color=red|Math_1_LinAlg_VL06_print_EN, p.9]]
@@ -222,7 +242,7 @@ span(v_1,...,v_k) = \{v_1 \lambda_1 + ... + v_k \lambda_k : \forall \lambda \in 
 $$
 this is also called the *linear hull*, because it's not like there's already enough synonyms to remember.
 
-Spans are actually pretty cool. They can be used as shorthand notation for lines, planes or even polygons. See some [[Math_1_LinAlg_VL06_print_EN.pdf#page=10|Examples]].
+Spans are actually pretty cool. They can be used as shorthand notation for lines, planes or even polygons. See some [Examples](/img/user/Attachments/Math_1_LinAlg_VL06_print_EN.pdf).
 
 For all $v \in span(v_1,...,v_k)$, any scalar multiplication of v is also part of the span, as in for some $\alpha \in \mathbb{R} : \alpha v \in span(...)$ .
 
@@ -231,10 +251,11 @@ This of course also holds for any linear combination of some $v,v' \in span(...)
 # Vector Spaces
 The set $R^n$ satisfying 
 - componentwise addition $+ : R^n + R^n → R^n$ and the 
-- scalar multiplication $· : R^n × R^n → R^n$ is a so-called vector space.  
+- scalar multiplication $· : R × R^n → R^n$ 
+is a so-called vector space.  
 
 > [!WARNING] Typo?
-> The slide [[Math_1_LinAlg_VL06_print_EN.pdf#page=12|Math_1_LinAlg_VL06_print_EN, p.12]] defines the addition as $R^n \times R^n \rightarrow ...$. This is almost certainly a typo.
+> The slide [Math_1_LinAlg_VL06_print_EN, p.12](/img/user/Attachments/Math_1_LinAlg_VL06_print_EN.pdf) defines the addition as $R^n \times R^n \rightarrow ...$. This is almost certainly a typo.
 
 Note the following properties:
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=12&rect=226,49,517,797&color=red|Math_1_LinAlg_VL06_print_EN, p.12]]
@@ -246,6 +267,7 @@ A $V \subset \mathbb{R}^n$ has to satisfy the following properties to be conside
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=13&rect=354,39,482,800&color=red|Math_1_LinAlg_VL06_print_EN, p.13]]
 
 # Linear (in-)dependence
+If we want to prove linear independence of a family $F$, it's best to form a matrix $A$ from its member vectors and then proving that $Ker(A) = {o}$, which is equivalent to proving that $rank(A) = n$, which again is equivalent to showing that $A$ has only dependent variables.
 ### Family
 a *family* is a finite subset of a set. Seems to be the standard notation for linear independence analysis.
 
@@ -258,7 +280,10 @@ It's sufficient to just disprove dependence in order to prove independence. Look
 
 # Basis
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=19&rect=210,42,370,799&color=red|Math_1_LinAlg_VL06_print_EN, p.19]]
-A basis is basically just the smallest possible family whose span maps out its full subspace.
+A basis is basically just the smallest linearly independent family whose span maps out its full subspace. Removing a member from the family will therefore remove this property.
+
+> [!INFO] Generating Set vs Basis
+> A Generating Set is defined as **any** set of vectors that map out a vector space, whereas a *Basis* is a special kind of Generating Set, with the added constraint of having minimal elements and therefore having the size of $dim(Subspace)$ (see below).
 
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=20&rect=112,41,227,801&color=red|Math_1_LinAlg_VL06_print_EN, p.20]]
 **Read the proof**!
@@ -288,11 +313,10 @@ Matrix exponentiation is only defined for **square matrices** (n×n). If a matri
 - **Identity:** $A^0=I$, where I is the identity matrix (the matrix equivalent of the number 1).
 # The inverse matrix
 The inverse of a square matrix A is denoted as $A^{−1}$. It is the matrix that "undoes" the transformation of A.
-- **The Identity Property:** $A⋅A^{−1}=I$and $A^{−1}⋅A=I$.
+- **The Identity Property:** $A⋅A^{−1}=I$ and $A^{−1}⋅A=I$.
 - **Invertibility:** Not all matrices have an inverse. A matrix must be square and its **determinant must not be zero** ($det(A) \neq 0$) to be "invertible" or "non-singular."
 - **Solving Equations:** Inverses are used to solve matrix equations like $Ax=b$ by calculating $x=A^{−1}b$.
-For invertible Matrices, the inverse is identical to the transpose.
-
+For invertible **orthogonal** Matrices, the inverse is identical to the transpose. This will come up later in [[Linear Algebra Maths 1#Orthogonal Matrices\|Linear Algebra Maths 1#Orthogonal Matrices]].
 ### What's the transpose?
 You basically just switch the rows and columns when transposing a matrix, so for 
 $$
@@ -377,6 +401,11 @@ The first instinct upon discovering this relation would probably be to just keep
 This is why the LU Decomposition is actually so smart:
 - We keep our $A$ in row echelon form ($U$), but don't just ignore away the operations we made on i (remember, we can't just write $Tx = b$ without transforming $b$ as well!). instead we keep their reverse in $L$, allowing us to write $LU$ as an actual complete stand in for $A$.
 - At that point we *do* have to solve two different LES, but due to sticking to triangular matrices, these are already in row echelon form and only require us two write out the actual result vector calculations!
+
+> [!INFO] What about the matrix's columns/vectors?
+> I haven't given this a lot of thought, but from what we can see later down the line with QR decomposition, it seems pretty obvious that the analogous "operation recording" pattern holds for columns when we switch the order of the matrix multiplication operation.
+>
+
 # The Determinant
 Unrelated to the definition the lecture gives for the determinant $det(A)$ of some matrix $A \in \mathbb{R}^{m \times n}$ (or rather lack thereof), here's a pretty good intuitive definition:
 > The determinant $det(A)$ describes the oriented factor by which $A \in \mathbb{R}^{m \times n}$ stretches any input vector $x$ when applied as $A \times x$. 
@@ -396,7 +425,8 @@ $det(A) = 0$ can be inferred by:
 - the family of columns being linearly dependent
 ## Negative determinants
 A negative determinant means that the transformation will invert the input space. 
-TODO: Put hand rule in here
+![[Math_1_LinAlg_VL09_print_EN.pdf#page=9&rect=73,10,516,809|Math_1_LinAlg_VL09_print_EN, p.9]]
+
 ## Computing the Determinant in 2D
 This is a pretty good illustration if you want to understand the formula in depth. It is the general formula on 2D matrices:
 ![Pasted image 20251216181209.png](/img/user/Attachments/Pasted%20image%2020251216181209.png)
@@ -477,13 +507,26 @@ First, consider the following Theorem:
 ![[Math_1_LinAlg_VL09_print_EN.pdf#page=27&rect=106,32,518,808|Math_1_LinAlg_VL09_print_EN, p.27]]
 ![[Math_1_LinAlg_VL09_print_EN.pdf#page=28&rect=217,45,483,800|Math_1_LinAlg_VL09_print_EN, p.28]]
 
-### Formula No.4: Cramer's Rule
-TODO: this guy named cramer had a rule or sum shit (this is just memorization anyways)
-
+## Cramer's Rule
+This guy named Cramer had a rule or some shit. Basically for an LES $Ax = b$ and $det(A) \neq 0$ (meaning an injective mapping), we can get the solution to $x$ using this rule.
+The rule states, that for $Ax = b$, we can determine the solution of $x_k$ by $x_k = \frac{det(A_k)}{det(A)}$, with $A_k$ being the determinant of $A$ with the $k$'th column replaces by $b$. The lecture says this is unnecessary though, so we can just forget about it.
 # Affine Subspaces
 ![[Math_1_LinAlg_VL10_print_EN.pdf#page=2&rect=133,41,275,803|Math_1_LinAlg_VL10_print_EN, p.2]]
-Basically an Affine Subspace is a subspace $\subseteq R^n$ after being moved by a vector $p \in R^n$.
 ![[Math_1_LinAlg_VL10_print_EN.pdf#page=3&rect=150,19,455,814|Math_1_LinAlg_VL10_print_EN, p.3]]
+Basically an Affine Subspace is a subspace $\subseteq R^n$ that is closed in regards to being moved by a $p \in R^n$.
+
+An alternative (and more computationally relevant) way to define this:
+1. An *affine combination* for a given set of vectors $A$ is defined as: $$
+\{x_1,...,x_k\} \in A | A \in \mathbb{R}^n 
+\Rightarrow
+\sum_{i=1}^k \lambda_i = 1 |
+\{\lambda_1,...,\lambda_k\} \in \mathbb{F} 
+\text{ (normally $F \subseteq \mathbb{R}$)}
+$$ Read: An affine combination is a linear combination whose coefficients sum up to $1$.
+2. *"closed with regards to affine combinations"* ($\Rightarrow$ **and therefore $A$ being an affine subspace**) is further defined as: $$
+\sum_{i=1}^k \lambda_i x_i \text{ is also} \in A
+$$Read: An affine subspace contains all affine combinations of its member vectors.
+This is essentially a generalization and expansion on [[Linear Algebra Maths 1#Affine and Convex Combinations\|Linear Algebra Maths 1#Affine and Convex Combinations]].
 # Properties of Scalar Products
 ![[Math_1_LinAlg_VL10_print_EN.pdf#page=4&rect=133,32,491,813|Math_1_LinAlg_VL10_print_EN, p.4]]
 # Distances/The Norm
@@ -502,13 +545,41 @@ of course, this also means that $v \cdot v = ||v||^2$
 ![[Math_1_LinAlg_VL10_print_EN.pdf#page=16&rect=108,40,538,801|Math_1_LinAlg_VL10_print_EN, p.16]]
 ![[Math_1_LinAlg_VL10_print_EN.pdf#page=17&rect=168,40,327,801|Math_1_LinAlg_VL10_print_EN, p.17]]
 # Orthogonal Projections onto Subspaces
-TODO: you actually paid attention in this one so write shit down.
+## The Simplest case: Projecting points onto lines
+there are certainly easier ways to do this (I would define a vector from $p$ to the line - including the factor - and then solve its $\times$ product for 0).
 
-## Gram Matrices
+However, this is how the lecture does it, so we can approach the general case for projecting any $v \in \mathbb{R}^n$ onto any subspace $s \subset \mathbb{R}^n$. 
 
+![[Math_1_LinAlg_VL11_print_EN.pdf#page=2&rect=72,13,537,807|Math_1_LinAlg_VL11_print_EN, p.2]]
+![[Math_1_LinAlg_VL11_print_EN.pdf#page=3&rect=292,47,490,757|Math_1_LinAlg_VL11_print_EN, p.3]]
+
+## The General Case
+
+### Orthogonal Subspaces
+An orthogonal subspace $M^\perp$ of $M \subset \mathbb{R}^n$ contains are vectors orthogonal to all vectors in $M$.
+![[Math_1_LinAlg_VL11_print_EN.pdf#page=5&rect=202,41,367,802|Math_1_LinAlg_VL11_print_EN, p.5]]
+![[Math_1_LinAlg_VL11_print_EN.pdf#page=6&rect=214,41,337,802|Math_1_LinAlg_VL11_print_EN, p.6]]
+![[Math_1_LinAlg_VL11_print_EN.pdf#page=7&rect=112,41,253,801|Math_1_LinAlg_VL11_print_EN, p.7]]
+Probably most importantly:
+![[Math_1_LinAlg_VL11_print_EN.pdf#page=8&rect=109,40,280,802|Math_1_LinAlg_VL11_print_EN, p.8]]
+
+### Setting up the Projection
+![[Math_1_LinAlg_VL11_print_EN.pdf#page=10&rect=111,39,518,803|Math_1_LinAlg_VL11_print_EN, p.10]]
+Note that $U^\perp$ is just the span of the normal vector of the plane in this case.
+
+![[Math_1_LinAlg_VL11_print_EN.pdf#page=11&rect=71,10,529,785|Math_1_LinAlg_VL11_print_EN, p.11]]
+
+### Gram Matrices
+A Gram Matrix is essentially a way to layout all (not automatically normalized, as they would need to be to represent the cosine of the angle!) orientations of vectors from a family to each other.
+![[Math_1_LinAlg_VL11_print_EN.pdf#page=12&rect=123,39,500,803|Math_1_LinAlg_VL11_print_EN, p.12]]
+	It can be seen as $<A,A^T>$ of its relating subspace $A$. 
+If you want to see the proof of invertibility, look at the [Next Slide](/img/user/Attachments/Math_1_LinAlg_VL11_print_EN.pdf). 
+### Relation to the Approximation Theorem
+![[Math_1_LinAlg_VL11_print_EN.pdf#page=14&rect=156,40,402,801|Math_1_LinAlg_VL11_print_EN, p.14]]
+
+I'm not sure if any of this is particularly relevant for now:![[Math_1_LinAlg_VL11_print_EN.pdf#page=15&rect=147,40,505,803|Math_1_LinAlg_VL11_print_EN, p.15]]![[Math_1_LinAlg_VL11_print_EN.pdf#page=16&rect=109,41,535,801|Math_1_LinAlg_VL11_print_EN, p.16]]
 # Orthogonal Systems and Bases
 ![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=2&rect=161,38,481,805|Math_1_LinAlg_VL12_13_print_EN-1, p.2]]
-
 ## Linear Independence of OGS
 ![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=4&rect=116,37,220,803|Math_1_LinAlg_VL12_13_print_EN-1, p.4]]
 (This should be self evident, as any given vector cannot be linearly dependent on any arbitrary orthogonal vector or vectors).
@@ -520,5 +591,46 @@ TODO: you actually paid attention in this one so write shit down.
 
 ## Fourier Expansions
 ![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=6&rect=129,39,413,801|Math_1_LinAlg_VL12_13_print_EN-1, p.6]]
+## Gram-Schmidt Normalization (obtaining ONBs)
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=8&rect=74,11,557,781|Math_1_LinAlg_VL12_13_print_EN-1, p.8]]
+And so on for the following vectors, using all previously obtained $w$ components...
+> [!ATTENTION] Simplifications
+> This slide already heavily simplifies the projection given in [[Linear Algebra Maths 1#The Simplest case Projecting points onto lines\|Linear Algebra Maths 1#The Simplest case Projecting points onto lines]] for the case of $r$ being normalized. I.e.: $p = \frac{u_2 \circ w_1}{w_1 \circ w_1} \times w_1 = u_2 \circ w_1 \times w_1$, since $||w_1|| = 1$ and $w_1 = w_1 \Rightarrow w_1 \circ w_1 = 1$ 
 
-TODO: 21.01
+Here's the complete breakdown:
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=10&rect=65,39,538,807|Math_1_LinAlg_VL12_13_print_EN-1, p.10]]
+## QR Decomposition
+QR Decomposition is essentially a matrix decomposed into the product of its range's orthonormal basis Q (LHS) and the inverse of the manipulations performed to transform the original matrix into the basis matrix, recorded as a right upper triangular matrix R (RHS).
+
+This relies on the same basic concept as LU Decomposition, but instead of tracking row manipulations (or rather their inverse) using the LHS matrix, we track column manipulations using the RHS matrix here. This makes sense, since transforming the range of a matrix (remember, that's just the subspace spanned by its columns) into an ONB is basically just a linear transformation between its columns.
+
+The Process:
+- Take the columns of matrix $A$ and treat them as a Generating Family $F$ of $Ran(A)$. Note that we can safely throw out any free column vectors, as they are bound to be linearly dependent on some other member(s) of the family.
+- Apply the Gram-Schmidt Normalization to $F$, turning it into an ONB of $Ran(A)$.
+	- The resulting vectors form your $Q$ matrix.
+- During this process, keep track of the coefficients generated for the previously orthonormalized $w$ vectors, as well as the normalization divisors used.
+	- These will be arranged in $R$ as we will see in a second
+There we go:
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=14&rect=323,122,488,709|Math_1_LinAlg_VL12_13_print_EN-1, p.14]]
+
+**This Detail might also be interesting to note**:
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=16&rect=281,56,403,792|Math_1_LinAlg_VL12_13_print_EN-1, p.16]]
+
+## Orthogonal Matrices
+This definition is kind of a continuation of [[Linear Algebra Maths 1#What's the transpose?\|Linear Algebra Maths 1#What's the transpose?]].
+These are some things we've touched on before:
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=17&rect=107,40,520,801|Math_1_LinAlg_VL12_13_print_EN-1, p.17]]
+These are basically the implications that we didn't look at in the previous coverage:
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=18&rect=133,37,387,804|Math_1_LinAlg_VL12_13_print_EN-1, p.18]]
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=19&rect=131,39,330,803|Math_1_LinAlg_VL12_13_print_EN-1, p.19]]
+## Rotations and Reflections
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=20&rect=112,40,517,802|Math_1_LinAlg_VL12_13_print_EN-1, p.20]]
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=21&rect=130,38,492,803|Math_1_LinAlg_VL12_13_print_EN-1, p.21]]
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=23&rect=73,10,522,806|Math_1_LinAlg_VL12_13_print_EN-1, p.23]]
+Note that $D$ and $S$ signify rotation and reflection respectively (probably taken from the German names **D**rehung and **S**piegelung). 
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=25&rect=111,42,534,802|Math_1_LinAlg_VL12_13_print_EN-1, p.25]]
+Note that this theorem is in relation to $\mathbb{R}^{3 \times 3}$. These properties **do not** hold for matrices $\in \mathbb{R}^{2 \times 2}$:
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=26&rect=153,39,278,803|Math_1_LinAlg_VL12_13_print_EN-1, p.26]]
+Some additional theorems:
+![[Math_1_LinAlg_VL12_13_print_EN-1.pdf#page=27&rect=110,42,335,803|Math_1_LinAlg_VL12_13_print_EN-1, p.27]]
+I am unsure to what extent these last few theorems are really relevant for the exam. Probably treat these as a bit of an afterthought when studying this module.

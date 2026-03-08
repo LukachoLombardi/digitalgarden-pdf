@@ -84,7 +84,7 @@ Defined as a sequence $(x_n)_n: n \rightarrow \infty \Rightarrow x_n\rightarrow0
 Note for the proof of this lemma: if we add two functions at the same n, the limit for the result will be the addition of the original limits (separately for both bound directions).
 
 > [!INFO] Lemmas
-> Starting from [[Ana1_EN-1.pdf#page=13|this]] we have even more null sequence lemmas. These are probably good to know about.
+> Starting from [this](/img/user/Attachments/Ana1_EN-1.pdf) we have even more null sequence lemmas. These are probably good to know about.
 
 The most important Lemma is probably the fact, that each convergent sequence can be written as a null sequence plus the limit.
 ## Commutation of lim
@@ -126,7 +126,7 @@ Basically a function that "converges onto itself", but not necessarily to a sing
 ![[Ana1_EN-1.pdf#page=21&rect=68,350,534,528|Ana1_EN-1, p.17]]
 Pretty basic stuff
 ![[Ana1_EN-1.pdf#page=21&rect=69,210,534,299|Ana1_EN-1, p.17]]
-Have another look through the proofs on [[Ana1_EN-1.pdf#page=21|Here]], at least as exam preparation.
+Have another look through the proofs on [Here](/img/user/Attachments/Ana1_EN-1.pdf), at least as exam preparation.
 ## Extrema
 ![[Ana1_EN-1.pdf#page=23&rect=66,426,533,621|Ana1_EN-1, p.19]]
 minimum and maximum are infimum and suprenums which are actually reached by $x_n$ at some point.
@@ -141,7 +141,7 @@ With k being the input to a sequence returning the used n's. Note that $(n_k)k\i
 
 > [!INFO] Convergence
 > Convergence is preserved between sequences and their subsequences. Since we can't add outliers, we cannot break the convergence. 
-> [[Ana1_EN-1.pdf#page=24|Ana1_EN-1, p.20]]
+> [Ana1_EN-1, p.20](/img/user/Attachments/Ana1_EN-1.pdf)
 
 ![[Ana1_EN-1.pdf#page=25&rect=68,590,533,653|Ana1_EN-1, p.21]]
 ![[Ana1_EN-1.pdf#page=25&rect=68,245,535,410|Ana1_EN-1, p.21]]
@@ -166,7 +166,7 @@ $(s_m)_{m \in \mathbb{N}}$ again describes the series.
 This proof is wedged into an example for some reason. 
 ### The Leibniz Rule
 ![[Ana1_EN-1.pdf#page=31&rect=68,61,534,179|Ana1_EN-1, p.27]]
-We're basically looking at a series over a cauchy sequence here. No surprise then that the proof for this involves the *Cauchy Criterion* (see more on [[Ana1_EN-1.pdf#page=32|Ana1_EN-1, p.28]]).
+We're basically looking at a series over a cauchy sequence here. No surprise then that the proof for this involves the *Cauchy Criterion* (see more on [Ana1_EN-1, p.28](/img/user/Attachments/Ana1_EN-1.pdf)).
 
 ### Absolute Convergence
 ![[Ana1_EN-1.pdf#page=32&rect=70,138,534,221|Ana1_EN-1, p.28]]
@@ -234,16 +234,14 @@ Note that "every sequence from $A$" just means "any sequence with $A$ as its cod
 ![[Ana1_EN-1.pdf#page=46&rect=69,501,534,559|Ana1_EN-1, p.42]]
 
 # Continuity
-The most intuitive idea of Continuity is probably a given function $f: D \rightarrow R; D \subset \mathbb{R}$ not having any "jumps" in its visual representation (on $D$). We'll explore shortly how we can actually note and describe this formally.
+The most intuitive idea of Continuity is probably a given function $f: D \rightarrow \mathbb{R}; D \subset \mathbb{R}$ not having any "jumps" in its visual representation (on $D$). We'll explore shortly how we can actually note and describe this formally.
 ## "Local" Continuity
 First, we need to establish what Continuity means for any $x_0 \in D$:
 > A function $f$ is called Continuous *at* some $x_0 \in D$, if $\lim_{x \to{x_0}} f(x) = f(x_0)$, meaning the limit approaching $x_0$ is equal to $x_0$'s associated codomain value.
 
 Note that $x_0$ is a "unique" member of $D$ here. It counterintuitively isn't part of some pattern $x_1, x_2, x_3, ...$ or similar.
-
 ### Special Case: Holes in the Domain
 If our domain has isolated outliers (e.g. $D = [0,5] \cup \{10\}$), we still treat it as continuous.
-
 # "Extended" Continuity
 This is the actual meat and potatoes of what continuity means for a whole function:
 > A function $f$ is called continuous, if the definition of "local" continuity (see above) holds for any $x_0 \in D$.
@@ -269,7 +267,7 @@ Kind of a redefinition.
 
 ## $\varepsilon-\delta$ Characterization and Continuity
 ![[Ana1_EN-1.pdf#page=53&rect=66,61,536,207|Ana1_EN-1, p.49]]
-This brings us back to the sausage example at the beginning of the script. We basically just define two permissible ranges $\forall \varepsilon > 0$ and $\exists \delta > 0$ around both $y$ and $x_0$ respectively, and require that any $f(x)$, with $x \in D$ in the $\delta$ range around $x_0$, shall be within the $\varepsilon$ range around $y$. There's a proof to this but if it comes up in the exam imma just kill myself.
+This brings us back to the sausage example at the beginning of the script. We basically just define two permissible ranges $\forall \varepsilon > 0$ and $\exists \delta > 0$ around both $y/f(x)$ and $x_0$ respectively, and require that any $f(x)$, with $x \in D$ in the $\delta$ range around $x_0$, shall be within the $\varepsilon$ range around $y$, so infinitely close. There's a proof to this but if it comes up in the exam imma just kill myself.
 
 ![[Ana1_EN-1.pdf#page=54&rect=68,322,533,567|Ana1_EN-1, p.50]]
 
@@ -286,7 +284,7 @@ Seems intuitive, still don't understand the proofs.
 ![[Ana1_EN-1.pdf#page=58&rect=69,569,535,661|Ana1_EN-1, p.54]]
 I don't really get what you need to formally prove here?
 - yes, if a function without codomain jumps crosses from negative to positive, it *will* have to hit 0 at some point.
-- "$f(a) < f(x) < f(b)$ has $x \in [a,b]$" seriously?
+- "$f(a) < f(x) < f(b)$ has $x \in [a,b]$ when continuous" seriously?
 ![Pasted image 20260118003649.png](/img/user/Attachments/Pasted%20image%2020260118003649.png)
 ## Continuity and the Inverse Function
 
@@ -306,5 +304,10 @@ This should all be intuitive for you by now, but just in case:
 
 TODO: everything from 18.12.25 (stuff like pole points and continuous extendability)
 TODO: 8.1.26
+TODO: And so on
+
+> [!WARNING] Continue in the script
+> I'm not gonna continue this writeup since this has good coverage in the Script ([Ana1_EN.pdf](/img/user/Attachments/Ana1_EN.pdf))
+
 
 

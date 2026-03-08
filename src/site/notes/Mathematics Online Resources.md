@@ -10,3 +10,5 @@ This is a small collection of mostly YouTube Channels and series that can serve 
 # Series
 - [Introduction to Higher Mathematics by Bill Shillito](https://www.youtube.com/watch?v=CMWFmjlB8v0&list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX): Really good primer series on all things proofs, logic, set theory and so on. Worth a look if you're trying to grab the DAS proof points during the exam!
 - [Abstract Algebra by Harvard](https://www.youtube.com/watch?v=VdLhQs_y_E8): This series goes into a lot of depth, later on but the basic concepts from the LinAlg lectures are explained well.
+# Videos
+- [Public Key Cryptography: RSA Encryption](https://www.youtube.com/watch?v=wXB-V_Keiu8): Incredibly well done video on RSA as a concept and its mathematical application. It really emphasizes well how much the encryption is based on non-intuitive knowledge about prime numbers we still don't really understand. 

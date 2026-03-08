@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/das-basic-logic-notes/"}
 ---
 
-This is discussed in [[Lecture_3.pdf]]
+This is discussed in [Lecture_3.pdf](/img/user/Attachments/Lecture_3.pdf)
 TODO: Maybe add some notes
 
 Most of this is pretty basic logic
