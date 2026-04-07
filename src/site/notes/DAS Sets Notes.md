@@ -79,7 +79,7 @@ Where P is a "filter function" (proper term: **selection criterion**)
 > The powerset of S is the set P(S) that contains all subsets of S
 
 ## What is a proof
-Look at this slide: [Lecture_1, p.19-3](/img/user/Attachments/Lecture_1.pdf)
+Look at this slide: [[Lecture_1.pdf#page=58|Lecture_1, p.19-3]]
 A proof is a sequence of steps, like a cooking recipe. At each step: 
 - Apply a definition
 - Apply a hypothesis

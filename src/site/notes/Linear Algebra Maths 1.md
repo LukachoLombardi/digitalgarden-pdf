@@ -42,20 +42,20 @@ For $x,y\in\mathbb{R}$:
 - $|a*b| = |x| * |y|$
 - $|x+y|\le |x| + |y|$
 ## Sum Notation
-From: [Foundations_Ana_LinAlg_EN, p.3](/img/user/Attachments/Foundations_Ana_LinAlg_EN.pdf)
+From: [[Foundations_Ana_LinAlg_EN.pdf#page=7&offset=,212,|Foundations_Ana_LinAlg_EN, p.3]]
 ![Pasted image 20251021135417.png](/img/user/Attachments/Pasted%20image%2020251021135417.png)
 ### Index Shifts
-From: [Foundations_Ana_LinAlg_EN, p.8](/img/user/Attachments/Foundations_Ana_LinAlg_EN.pdf)
+From: [[Foundations_Ana_LinAlg_EN.pdf#page=12|Foundations_Ana_LinAlg_EN, p.8]]
 ![Pasted image 20251021140205.png](/img/user/Attachments/Pasted%20image%2020251021140205.png)
 ## Product Notation
-From: [Foundations_Ana_LinAlg_EN, p.7](/img/user/Attachments/Foundations_Ana_LinAlg_EN.pdf)
+From: [[Foundations_Ana_LinAlg_EN.pdf#page=11|Foundations_Ana_LinAlg_EN, p.7]]
 ![Pasted image 20251021135700.png](/img/user/Attachments/Pasted%20image%2020251021135700.png)
 
 > [!NOTE] Sums and products
 > Commutative, Associative and Distributive laws apply to sums and products
 
 # Vector Recap
-I'm gonna gloss over most of this since you probably know about it from High-School. The exact slides can be found in [Math_1_LinAlg_VL03_print_EN.pdf](/img/user/Attachments/Math_1_LinAlg_VL03_print_EN.pdf).
+I'm gonna gloss over most of this since you probably know about it from High-School. The exact slides can be found in [[Math_1_LinAlg_VL03_print_EN.pdf]].
 ## Basic Rules
 - Real Vectors are defined in $\mathbb{R}^n$, $n$ being the dimensions of the vector.
 - Vectors can be scaled by a factor $\alpha$ (called scalar multiplication), multiplying all its rows/members by that factor.
@@ -156,7 +156,7 @@ You can try memorizing this:
 ~~But I honest to god have no fucking idea how you're supposed to apply this to arbitrary LMS. I'm not even sure LeBorne even made an attempt to explain it.
 I guess you could argue something about linear dependence here? A single row of the matrix might produce the same output for two different vector mults, but as long as the other rows aren't literally identical to it, they will produce a value different from the one contained in the "original" output. So as long as that second condition is satisfied, LMS' are bijective. Or I could be completely wrong about this idk~~
 
-Regarding formal determination of sur-/injectivity and invertibility, see [[Linear Algebra Maths 1#Solvability\|#Solvability]] further down below, specifically it's subheadings.
+Regarding formal determination of sur-/injectivity and invertibility, see [[#Solvability]] further down below, specifically it's subheadings.
 
 # Linearity
 This determines whether or not we can call a LMS *linear*.
@@ -172,7 +172,7 @@ This determines whether or not we can call a LMS *linear*.
 ![[Math_1_LinAlg_VL04_print_EN.pdf#page=21&rect=137,37,326,806|Math_1_LinAlg_VL04_print_EN, p.21]]
 
 # Solving LES
-I'm not gonna recap this. The concept of augmented matrices and the Gauss/Gauss-Jordan Algorithm are explained in [Math_1_LinAlg_VL05_print_EN, p.1](/img/user/Attachments/Math_1_LinAlg_VL05_print_EN.pdf).
+I'm not gonna recap this. The concept of augmented matrices and the Gauss/Gauss-Jordan Algorithm are explained in [[Math_1_LinAlg_VL05_print_EN.pdf#page=1|Math_1_LinAlg_VL05_print_EN, p.1]].
 ## Some additional terminology
 - **row echelon form**: LES in which you can draw a line proceeding one to the bottom and at least one to the right per step, which only contains zeroed out elements below it.
 - **pivot element**: (nonzero) Element that is used to zero out elements in rows below it
@@ -189,7 +189,7 @@ If all LES variables are dependent, the solution is unique. One free variable al
 ![[Math_1_LinAlg_VL05_print_EN.pdf#page=20&rect=106,40,313,802&color=red|Math_1_LinAlg_VL05_print_EN, p.20]]
 The kernel is also called nullspace (that's a way better name imo).
 
-The Solution to the inhomogeneous LES is a linear combination of the unique inhomogeneous solution and arbitrary Kernel member vectors, i.e. solutions for the homogeneous systems. ([Math_1_LinAlg_VL05_print_EN, p.21](/img/user/Attachments/Math_1_LinAlg_VL05_print_EN.pdf))
+The Solution to the inhomogeneous LES is a linear combination of the unique inhomogeneous solution and arbitrary Kernel member vectors, i.e. solutions for the homogeneous systems. ([[Math_1_LinAlg_VL05_print_EN.pdf#page=21|Math_1_LinAlg_VL05_print_EN, p.21]])
 ## Noting infinite solutions spaces
 ![[Math_1_LinAlg_VL05_print_EN.pdf#page=24&rect=72,38,513,803|Math_1_LinAlg_VL05_print_EN, p.24]]
 (at least that's what I think this is good for)
@@ -210,7 +210,7 @@ These are both true.
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=3&rect=109,41,510,803&color=red|Math_1_LinAlg_VL06_print_EN, p.3]]
 The most important takeaway is probably that a $b$ has to be an element of $f_A: x \mapsto Ax :=b$'s codomain, meaning of $Ran(A)$, in order to create a solvable LES.
 
-In addition to [[Linear Algebra Maths 1#Some additional terminology\|#Some additional terminology]], $rank(A) := m \leq n$ for the LES to be solvable.
+In addition to [[#Some additional terminology]], $rank(A) := m \leq n$ for the LES to be solvable.
 Some additional equivalent statements:
 
 ### Unconditional solvability (surjectivity)
@@ -230,7 +230,7 @@ The best way to check sur-/injectivity is probably to check the rank and it's re
 Can't be bothered to actually understand this right now.
 
 > [!WARNING] Proofs
-> I didn't include the specific proofs here for brevity's sake, but since they're quite straightforward to understand, it's a good idea to read through and follow them, starting from [Math_1_LinAlg_VL06_print_EN, p.4](/img/user/Attachments/Math_1_LinAlg_VL06_print_EN.pdf).
+> I didn't include the specific proofs here for brevity's sake, but since they're quite straightforward to understand, it's a good idea to read through and follow them, starting from [[Math_1_LinAlg_VL06_print_EN.pdf#page=4|Math_1_LinAlg_VL06_print_EN, p.4]].
 
 ### Specific implications for square matrices
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=9&rect=121,34,437,803&color=red|Math_1_LinAlg_VL06_print_EN, p.9]]
@@ -242,7 +242,7 @@ span(v_1,...,v_k) = \{v_1 \lambda_1 + ... + v_k \lambda_k : \forall \lambda \in 
 $$
 this is also called the *linear hull*, because it's not like there's already enough synonyms to remember.
 
-Spans are actually pretty cool. They can be used as shorthand notation for lines, planes or even polygons. See some [Examples](/img/user/Attachments/Math_1_LinAlg_VL06_print_EN.pdf).
+Spans are actually pretty cool. They can be used as shorthand notation for lines, planes or even polygons. See some [[Math_1_LinAlg_VL06_print_EN.pdf#page=10|Examples]].
 
 For all $v \in span(v_1,...,v_k)$, any scalar multiplication of v is also part of the span, as in for some $\alpha \in \mathbb{R} : \alpha v \in span(...)$ .
 
@@ -255,7 +255,7 @@ The set $R^n$ satisfying
 is a so-called vector space.  
 
 > [!WARNING] Typo?
-> The slide [Math_1_LinAlg_VL06_print_EN, p.12](/img/user/Attachments/Math_1_LinAlg_VL06_print_EN.pdf) defines the addition as $R^n \times R^n \rightarrow ...$. This is almost certainly a typo.
+> The slide [[Math_1_LinAlg_VL06_print_EN.pdf#page=12|Math_1_LinAlg_VL06_print_EN, p.12]] defines the addition as $R^n \times R^n \rightarrow ...$. This is almost certainly a typo.
 
 Note the following properties:
 ![[Math_1_LinAlg_VL06_print_EN.pdf#page=12&rect=226,49,517,797&color=red|Math_1_LinAlg_VL06_print_EN, p.12]]
@@ -573,7 +573,7 @@ Note that $U^\perp$ is just the span of the normal vector of the plane in this c
 A Gram Matrix is essentially a way to layout all (not automatically normalized, as they would need to be to represent the cosine of the angle!) orientations of vectors from a family to each other.
 ![[Math_1_LinAlg_VL11_print_EN.pdf#page=12&rect=123,39,500,803|Math_1_LinAlg_VL11_print_EN, p.12]]
 	It can be seen as $<A,A^T>$ of its relating subspace $A$. 
-If you want to see the proof of invertibility, look at the [Next Slide](/img/user/Attachments/Math_1_LinAlg_VL11_print_EN.pdf). 
+If you want to see the proof of invertibility, look at the [[Math_1_LinAlg_VL11_print_EN.pdf#page=13|Next Slide]]. 
 ### Relation to the Approximation Theorem
 ![[Math_1_LinAlg_VL11_print_EN.pdf#page=14&rect=156,40,402,801|Math_1_LinAlg_VL11_print_EN, p.14]]
 

@@ -26,5 +26,5 @@ The composition of a $f: A \rightarrow B$ and $g: A \rightarrow B$ would be $g \
 ### Identity Functions
 A function $Id_A(x) = x$ on a set $A$ maps $A \rightarrow A$ and returns $x$. It's worth noting that $Id_A(x) = f^{-1}(f(x)) = f^{-1} \circ f$ for a function $f: A \rightarrow B$ (B being an arbitrary set).
 ## Inverses
-Slides with illustrations: [Lecture_2, p.15-6](/img/user/Attachments/Lecture_2.pdf)
+Slides with illustrations: [[Lecture_2.pdf#page=95|Lecture_2, p.15-6]]
 The inverse $f^{-1}$ for a function $f: A \rightarrow B$ maps back $B \rightarrow A$. ("Umkehrfunktion" in German). It can only be defined on a *bijective* $f$, since it would otherwise break the function definition by associating multiple codomain values of $f$ with single domain values.

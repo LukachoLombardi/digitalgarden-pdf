@@ -84,7 +84,7 @@ Defined as a sequence $(x_n)_n: n \rightarrow \infty \Rightarrow x_n\rightarrow0
 Note for the proof of this lemma: if we add two functions at the same n, the limit for the result will be the addition of the original limits (separately for both bound directions).
 
 > [!INFO] Lemmas
-> Starting from [this](/img/user/Attachments/Ana1_EN-1.pdf) we have even more null sequence lemmas. These are probably good to know about.
+> Starting from [[Ana1_EN-1.pdf#page=13|this]] we have even more null sequence lemmas. These are probably good to know about.
 
 The most important Lemma is probably the fact, that each convergent sequence can be written as a null sequence plus the limit.
 ## Commutation of lim
@@ -126,7 +126,7 @@ Basically a function that "converges onto itself", but not necessarily to a sing
 ![[Ana1_EN-1.pdf#page=21&rect=68,350,534,528|Ana1_EN-1, p.17]]
 Pretty basic stuff
 ![[Ana1_EN-1.pdf#page=21&rect=69,210,534,299|Ana1_EN-1, p.17]]
-Have another look through the proofs on [Here](/img/user/Attachments/Ana1_EN-1.pdf), at least as exam preparation.
+Have another look through the proofs on [[Ana1_EN-1.pdf#page=21|Here]], at least as exam preparation.
 ## Extrema
 ![[Ana1_EN-1.pdf#page=23&rect=66,426,533,621|Ana1_EN-1, p.19]]
 minimum and maximum are infimum and suprenums which are actually reached by $x_n$ at some point.
@@ -141,7 +141,7 @@ With k being the input to a sequence returning the used n's. Note that $(n_k)k\i
 
 > [!INFO] Convergence
 > Convergence is preserved between sequences and their subsequences. Since we can't add outliers, we cannot break the convergence. 
-> [Ana1_EN-1, p.20](/img/user/Attachments/Ana1_EN-1.pdf)
+> [[Ana1_EN-1.pdf#page=24|Ana1_EN-1, p.20]]
 
 ![[Ana1_EN-1.pdf#page=25&rect=68,590,533,653|Ana1_EN-1, p.21]]
 ![[Ana1_EN-1.pdf#page=25&rect=68,245,535,410|Ana1_EN-1, p.21]]
@@ -166,7 +166,7 @@ $(s_m)_{m \in \mathbb{N}}$ again describes the series.
 This proof is wedged into an example for some reason. 
 ### The Leibniz Rule
 ![[Ana1_EN-1.pdf#page=31&rect=68,61,534,179|Ana1_EN-1, p.27]]
-We're basically looking at a series over a cauchy sequence here. No surprise then that the proof for this involves the *Cauchy Criterion* (see more on [Ana1_EN-1, p.28](/img/user/Attachments/Ana1_EN-1.pdf)).
+We're basically looking at a series over a cauchy sequence here. No surprise then that the proof for this involves the *Cauchy Criterion* (see more on [[Ana1_EN-1.pdf#page=32|Ana1_EN-1, p.28]]).
 
 ### Absolute Convergence
 ![[Ana1_EN-1.pdf#page=32&rect=70,138,534,221|Ana1_EN-1, p.28]]
@@ -307,7 +307,7 @@ TODO: 8.1.26
 TODO: And so on
 
 > [!WARNING] Continue in the script
-> I'm not gonna continue this writeup since this has good coverage in the Script ([Ana1_EN.pdf](/img/user/Attachments/Ana1_EN.pdf))
+> I'm not gonna continue this writeup since this has good coverage in the Script ([[Ana1_EN.pdf]])
 
 
 
